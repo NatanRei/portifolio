@@ -19,6 +19,7 @@ export const HeaderIcons = styled("div", {
 
 export const HeaderIcon = styled("a", {
     margin: "0 1rem",
-    textDecoration: "none"
+    textDecoration: "none",
+    cursor: "pointer"
 });
 
