@@ -4,6 +4,7 @@ export const HeaderContainer = styled("header", {
     position: "fixed",
     top: 0,
     left: 0,
+    zIndex: 200,
     width: "100%",
     height: "3.5rem",
     display: "flex",

@@ -1,12 +1,20 @@
+#parallax_container {
+    width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
 
+}
 .animation, .animation_layer {
 	height: 100vh;
+
+    overflow: auto!important;
 }
 
 .animation {
-  display: block;
-	position: relative;
-	z-index: 10;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    
 }
 
 .animation_layer {
@@ -38,5 +46,6 @@
 #jungle5 {
   background-size: 100% auto;
   background-image: url(../assets/mountain_layer_one.svg);
-  position: fixed;
+  /* position: fixed; */
+
 }
