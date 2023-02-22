@@ -35,3 +35,26 @@ export const Title = styled("h1", {
 export const SubTitle = styled("h1", {
     fontSize: "$xxl"
 });
+
+export const Sun = styled("div", {
+    backgroundRepeat: "no-repeat",
+    width: 100,
+    height: 100,
+    backgroundImage: 'url(../../../src/assets/sun.svg)'
+
+});
+   
+//   #mountain {
+//     background-repeat: no-repeat;
+//     background-size: 110% auto;
+//     fill: rgb(95, 80, 58);
+  
+//     background-image: url(../assets/mountain_layer_two.svg);
+//   }
+  
+//   #jungle5 {
+//     background-size: 110% auto;
+//     background-image: url(../assets/mountain_layer_one.svg);
+//     /* position: fixed; */
+  
+//   }
