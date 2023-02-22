@@ -10,17 +10,25 @@ export const HeaderContainer = styled("header", {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-
+    transitionDuration: '800ms',
     background: "$gray800"
 });
 
 export const HeaderIcons = styled("div", {
-    margin: "0 auto"
+    margin: "0 auto",
+    zIndex: 200,
+    opacity: 1
+    
 });
 
 export const HeaderIcon = styled("a", {
     margin: "0 1rem",
     textDecoration: "none",
-    cursor: "pointer"
+    cursor: "pointer",
+    '&:hover': {
+        color: "white",
+        borderBottom: "1px solid",
+        
+    }
 });
 
