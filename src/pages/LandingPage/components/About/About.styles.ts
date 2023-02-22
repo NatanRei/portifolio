@@ -1,8 +1,10 @@
-import { styled } from "../../../styles";
+import { styled } from "../../../../styles";
 
 export const AboutContainer = styled("div", {
+    boxShadow:'rgb(0 0 0 / 50%) 0px -75px 45px',
     width: "100%",
-    margin: "1rem 7rem",
+    margin: "1rem 0rem",
+    padding: '7rem',
     'h2': {
         fontSize: '$2xl'
     }

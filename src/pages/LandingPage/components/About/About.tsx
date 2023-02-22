@@ -10,9 +10,6 @@ export function About() {
         addSuffix: true,
     });
 
-
-    console.log(publishedDateRelativeToNow);
-
     return (
         <AboutContainer>
             <h2>Olá,</h2>
@@ -26,6 +23,10 @@ export function About() {
             </BoxContainer>
             <ParagraphContainer>
                 Desde lá, sempre busco evolução constante nas áreas que a programação e tecnologia abrangem (tudo?), mantendo-me alinhado com o mercado.
+            </ParagraphContainer>
+
+            <ParagraphContainer>
+                Veja alguns projetinhos bacanas que fiz:
             </ParagraphContainer>
 
         </AboutContainer>

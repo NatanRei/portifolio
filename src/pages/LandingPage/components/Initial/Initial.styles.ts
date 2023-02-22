@@ -1,4 +1,4 @@
-import { styled } from "../../../styles";
+import { styled } from "../../../../styles";
 
 export const InitialContainer = styled("div", {
     width: "100%",
@@ -17,7 +17,7 @@ export const InitialContainer = styled("div", {
         backgroundPosition: "right 35% bottom 45%",
         height: '100vh',
         width: '100%',
-        opacity: 0.3,
+        opacity: 0.5,
     }
 });
 
@@ -46,7 +46,6 @@ export const Sun = styled("div", {
     backgroundImage: 'url(../../../src/assets/sun.svg)',
     'svg': {
         fill: "white",
-
     }
 });
    
