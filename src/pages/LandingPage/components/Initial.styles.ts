@@ -4,7 +4,7 @@ export const InitialContainer = styled("div", {
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "flex-end",
+    justifyContent: "center",
     '&:before': {
         content: "",
         position: "absolute",
@@ -37,11 +37,17 @@ export const SubTitle = styled("h1", {
 });
 
 export const Sun = styled("div", {
+    position: "absolute",
+    top: "40%",
+    left: "50%",
     backgroundRepeat: "no-repeat",
-    width: 100,
-    height: 100,
-    backgroundImage: 'url(../../../src/assets/sun.svg)'
+    width: 200,
+    height: 200,
+    backgroundImage: 'url(../../../src/assets/sun.svg)',
+    'svg': {
+        fill: "white",
 
+    }
 });
    
 //   #mountain {
