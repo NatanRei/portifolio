@@ -6,6 +6,7 @@ export const FooterContainer = styled("footer", {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    zIndex: 200,
 
     background: "$gray800"
 });

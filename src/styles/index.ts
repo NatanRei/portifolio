@@ -25,7 +25,12 @@ export const {
       md: '1.125rem',
       lg: '1.25rem',
       xl: '1.5rem',
-      xxl: '2rem'
+      xxl: '2rem',
+      '2xl': '2.5rem',
+      '3xl': '3rem',
+      '4xl': '4rem',
+      '5xl': '5rem',
+      '6xl': '6rem',
 
     }
   }
