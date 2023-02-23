@@ -21,7 +21,7 @@ export function Initial() {
             {/* <Sun style={{ transform: `translateY(${offsetY * 1}px)` }} /> */}
             
             <TitleContainer>
-            <Title style={{ transform: `translate(${offsetY * 1.6}px, -${offsetY * 1.6}px)`}}>NATAN REIS CHMURA</Title>
+            <Title style={{ transform: `translate(${offsetY * 0.7}px, -${offsetY * 0.9}px) rotate(-${offsetY * 0.07}deg)`}}>NATAN REIS CHMURA</Title>
             <SubTitle style={{ transform: `translateX(-${offsetY * 1.9}px)` }}>Full Stack Developer</SubTitle>
             </TitleContainer>
             <TextLoop />
