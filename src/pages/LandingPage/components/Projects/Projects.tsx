@@ -13,6 +13,15 @@ export function Projects() {
             <Laptop />
             <>Esse é top</>
             </RowAlignContainer>
+            <RowAlignContainer>
+            <>Esse é top</>
+            <iframe scrolling="no" width="600" height="500" src="https://peaceful-fermat-a4dc3a.netlify.app/" style={{ overflowY: "hidden" }} />
+            </RowAlignContainer>
+            <RowAlignContainer>
+            <iframe scrolling="no" width="600" height="500" src="https://zealous-borg-4b8c3c.netlify.app/" />
+            <>Esse é top</>
+            </RowAlignContainer>
+            
             projects: projects to put here: 
             https://fabulous-moonbeam-3eefdd.netlify.app/
             https://enchanting-malabi-947e9d.netlify.app/ (arrumar storage antes)
@@ -20,7 +29,6 @@ export function Projects() {
             blog frontend https://blog-front-end-one.vercel.app/ todos os projetos que estão lá
             https://ntn-shop.vercel.app/ shop
             https://github.com/NatanRei/Calculadora-de-juros
-            https://github.com/NatanRei/fortuneCookieInReact
             https://github.com/NatanRei/weberFoodFront
             https://github.com/NatanRei/ToDoListInReact
             https://github.com/NatanRei/sudoku-solver
