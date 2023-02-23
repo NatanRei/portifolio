@@ -4,7 +4,7 @@ export const InitialContainer = styled("div", {
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
+    justifyContent: "space-between",
     '&:before': {
         content: "",
         position: "absolute",
@@ -21,12 +21,14 @@ export const InitialContainer = styled("div", {
     }
 });
 
+
+
 export const TitleContainer = styled("div", {
     display: "flex",
     flexDirection: "column",
 
     alignItems: "start",
-    marginLeft: "15%"
+    margin: "20% 0 0 15%"
 });
 
 export const Title = styled("h1", {

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { TextLoop } from "../../../../components/TextLoop";
 import { InitialContainer, SubTitle, Sun, Title, TitleContainer } from "./Initial.styles";
 
 export function Initial() {
@@ -19,10 +20,12 @@ export function Initial() {
     return (
         <InitialContainer>
             {/* <Sun style={{ transform: `translateY(${offsetY * 1}px)` }} /> */}
+            
             <TitleContainer>
             <Title style={{ transform: `translate(${offsetY * 1.6}px, -${offsetY * 1.6}px)`}}>NATAN REIS CHMURA</Title>
             <SubTitle style={{ transform: `translateX(-${offsetY * 1.9}px)` }}>Full Stack Developer</SubTitle>
             </TitleContainer>
+            <TextLoop />
         </InitialContainer>
     );
 }

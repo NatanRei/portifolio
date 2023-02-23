@@ -7,7 +7,6 @@ export function Home() {
     return (
         <HomeContainer>
             <Header />
-            
             <LandingPage/>
             <Footer />
          </HomeContainer>
