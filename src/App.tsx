@@ -1,7 +1,3 @@
 import { Home } from "./pages/Home";
 
-export function App() {
-  return (
-    <Home/>
-  )
-}
+export const App = () => <Home />;
