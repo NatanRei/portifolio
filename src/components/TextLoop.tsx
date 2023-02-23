@@ -1,4 +1,4 @@
-import { TextLoopContainer, Text } from "./TextLoop.styles";
+import { Scroller, ScrollerContainer, Text } from "./TextLoop.styles";
 
 function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
@@ -9,44 +9,29 @@ function getWindowDimensions() {
   }
 
 export function TextLoop() {
+
     const items: string[] = [
         "React",
         "Redux",
         "Node",
         "Express",
         "MongoDB",
-        "GraphQL"
+        "GraphQL",
+        "Laravel",
+        "PHP",
+        "Docker",
+        "Python",
+        "Selenium",
     ];
 
+    const { width } = getWindowDimensions();
 
-
-    const { width, height } = getWindowDimensions();
-
-    // let TweenLoop = TweenMax.to('.travel-txt', 15,{xPercent: -100, ease: Linear.easeNone})
-
-    // TweenMax.ticker.addEventListener("tick", myFunction);
-
-    // var $eachTxt = document.querySelectorAll('.travel-txt__each');
-    // var $last = $eachTxt[$eachTxt.length- 4];
-    // function myFunction(event) {
-	//     $distanceLast = $last.getBoundingClientRect().left
-    //     if($distanceLast < 0) {
-    //         TweenLoop.play(0)
-    //     }
-        
-        
-    //     document.querySelector('.travel-txt').hover(function(){
-    //         TweenLoop.pause()
-    //     }, function(){
-    //         TweenLoop.play()
-    //     })
-	
-    // }
-
-
+    const padding = width / items.length;
     return (
-        <TextLoopContainer>
-            {items.map(item => <Text key={item}>{item}</Text>)}
-        </TextLoopContainer>
+      <ScrollerContainer>
+          <Scroller gradient={false} pauseOnHover speed={80} className="marquee" direction="left">
+            {items.map((item) => (<Text target='_blank' href={`https://www.google.com/search?q=${item}`} style={{ paddingLeft: padding }} className="item" key={item}>{item}</Text>))}
+          </Scroller>
+        </ScrollerContainer>
     );
 }

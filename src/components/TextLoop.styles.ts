@@ -1,3 +1,4 @@
+import Marquee from "react-fast-marquee";
 import { styled } from "../styles";
 
 export const TextLoopContainer = styled("div", {
@@ -7,7 +8,17 @@ export const TextLoopContainer = styled("div", {
     whiteSpace: 'nowrap',
     display: 'flex',
     justifyContent: 'space-between',
+    marginBottom: '10rem'
 });
+export const ScrollerContainer = styled('div', {
+    fontSize: '$lg',
+    marginBottom: '2%',
+})
+export const Scroller = styled(Marquee, {
+    fontSize: '$lg',
+})
 
-export const Text = styled("div", {
+export const Text = styled("a", {
+    textDecoration: 'none',
+    color: "$gray100"
 });
