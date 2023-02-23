@@ -25,7 +25,7 @@ export function About() {
             <Counter initialDate={initOfNatanProgramingCarrer} />
             </BoxContainer>
             <ParagraphContainer>
-                Desde lá, sempre busco evolução constante nas áreas que a programação e tecnologia abrangem (tudo?), mantendo-me alinhado com o mercado.
+                Desde lá, sempre busco evolução constante nas áreas que a programação e tecnologia abrangem (todas?), mantendo-me alinhado com o mercado.
             </ParagraphContainer>
 
             <ParagraphContainer>

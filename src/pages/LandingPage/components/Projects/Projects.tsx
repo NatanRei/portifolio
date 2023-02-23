@@ -1,8 +1,13 @@
-import { ProjectsContainer } from "./Projects.styles";
+import { Card3D } from "./components/card3d";
+import { ProjectsContainer, RowAlignContainer } from "./Projects.styles";
 
 export function Projects() {
     return (
         <ProjectsContainer>
+            <RowAlignContainer>
+            <>tetgasdgsdg</>
+            <Card3D />
+            </RowAlignContainer>
             projects: projects to put here: 
             https://fabulous-moonbeam-3eefdd.netlify.app/
             https://enchanting-malabi-947e9d.netlify.app/ (arrumar storage antes)

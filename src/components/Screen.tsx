@@ -2,10 +2,11 @@ import { ScreenContainer } from "./Screen.styles";
 
 interface ScreenProps {
     children: JSX.Element[] | JSX.Element | string;
+    id: string;
   }
 
-export function Screen({ children }: ScreenProps) {
+export function Screen({ children, id }: ScreenProps) {
     return (
-        <ScreenContainer>{ children }</ScreenContainer>
+        <ScreenContainer id={id}>{ children }</ScreenContainer>
     );
 }

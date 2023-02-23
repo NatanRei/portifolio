@@ -10,9 +10,6 @@ export function Contact() {
             <a target="_blank" href="https://github.com/NatanRei"><GithubLogo size={64} /></a>
             <a target="_blank" href="mailto:nreischmura@gmail.com?subject=Proposta irrecusável de $15k"><EnvelopeSimple size={64} /></a>
             </Icons>
-           
-
-            
         </ContactContainer>
     );
 }
