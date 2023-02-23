@@ -1,10 +1,13 @@
 import { AboutContainer, BoxContainer, ParagraphContainer } from "./About.styles";
-import {format, formatDistanceToNow} from 'date-fns'
+import {formatDistanceToNow} from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR';
+import { diffBetweenDates } from "../../../../services/date";
+import { Counter } from "./components/Counter";
 
 export function About() {
-    const initOfNatanProgramingCarrer = new Date("01/09/2020");
+    const initOfNatanProgramingCarrer = new Date("2020-09-01");
 
+    
     const publishedDateRelativeToNow = formatDistanceToNow(initOfNatanProgramingCarrer, {
         locale: ptBR,
         addSuffix: true,
@@ -19,7 +22,7 @@ export function About() {
                 Desde muito tempo, venho mantendo contato com o universo da tecnologia,
                 mas iniciei os trabalhos com programação Web em meados de setembro ou outubro de 2020, {publishedDateRelativeToNow}
             </ParagraphContainer>
-            {/* colocar um contador aqui */}
+            <Counter initialDate={initOfNatanProgramingCarrer} />
             </BoxContainer>
             <ParagraphContainer>
                 Desde lá, sempre busco evolução constante nas áreas que a programação e tecnologia abrangem (tudo?), mantendo-me alinhado com o mercado.
