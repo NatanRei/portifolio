@@ -20,7 +20,7 @@ export function About() {
             <ParagraphContainer>
                 Sou desenvolvedor de softwares, aplicações web e afins.
                 Desde muito tempo, venho mantendo contato com o universo da tecnologia,
-                mas iniciei os trabalhos com programação Web em meados de setembro ou outubro de 2020, {publishedDateRelativeToNow}
+                mas iniciei os trabalhos com programação Web em meados de setembro ou outubro de 2020, {publishedDateRelativeToNow}.
             </ParagraphContainer>
             <Counter initialDate={initOfNatanProgramingCarrer} />
             </BoxContainer>
