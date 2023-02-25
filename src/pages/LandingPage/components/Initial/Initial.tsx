@@ -22,7 +22,6 @@ export function Initial() {
     } else {
       let opacityPercent = ((pageOffset * 100) / widowHeight)
       opacityPercent = opacityPercent > 100 ? 100 : opacityPercent < 0 ? 0 : opacityPercent;
-      console.log(opacityPercent / 100);
         setOpacity(1 - (opacityPercent / 100));
     }
 };

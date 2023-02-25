@@ -5,10 +5,12 @@ export const ProjectsContainer = styled("div", {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: '3rem'
 });
 
 export const RowAlignContainer = styled("div", {
-    width: "100%",
+    marginTop: '2rem',
+    width: "80%",
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-evenly',

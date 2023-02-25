@@ -20,7 +20,6 @@ export const CounterContainer = styled("div", {
     
 });
 export const Separator = styled("div", {
-    padding: '2rem 0',
     color: '$green500',
     width: '2rem',
     overflow: 'hidden',

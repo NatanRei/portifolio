@@ -1,8 +1,8 @@
-import { AboutContainer, BoxContainer, ParagraphContainer } from "./About.styles";
+import { AboutContainer, BoxContainer } from "./About.styles";
 import {formatDistanceToNow} from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR';
-import { diffBetweenDates } from "../../../../services/date";
 import { Counter } from "./components/Counter";
+import { Paragraph } from "../../../Home.styles";
 
 export function About() {
     const initOfNatanProgramingCarrer = new Date("2020-09-01");
@@ -17,21 +17,24 @@ export function About() {
         <AboutContainer>
             <h2>Olá,</h2>
             <BoxContainer>
-            <ParagraphContainer>
+            <Paragraph>
                 Sou desenvolvedor de softwares, aplicações web e afins.
                 Desde muito tempo, venho mantendo contato com o universo da tecnologia,
                 mas iniciei os trabalhos com programação Web em meados de setembro ou outubro de 2020, {publishedDateRelativeToNow}.
-            </ParagraphContainer>
+            </Paragraph>
             <Counter initialDate={initOfNatanProgramingCarrer} />
             </BoxContainer>
-            <ParagraphContainer>
+            <BoxContainer>
+            <Paragraph>
                 Desde lá, sempre busco evolução constante nas áreas que a programação e tecnologia abrangem (todas?), mantendo-me alinhado com o mercado.
-            </ParagraphContainer>
-
-            <ParagraphContainer>
+            </Paragraph>
+            <Paragraph>
+                Atualmente, trabalho como desenvolvedor backend, minhas principais ferramentas são: Laravel, MySQL, Python... 
+            </Paragraph>
+            </BoxContainer>
+            <BoxContainer style={{ fontSize: '1.875rem', marginTop: '2rem' }}>
                 Veja alguns projetinhos bacanas que fiz:
-            </ParagraphContainer>
-
+            </BoxContainer>
         </AboutContainer>
     );
 }

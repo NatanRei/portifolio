@@ -15,3 +15,18 @@ export const Teste = styled("div", {
     zIndex: 100,
     backgroundColor: "black"
 });
+
+export const Paragraph = styled("p", {
+    border: "1px solid $gray700",
+    padding: "2rem",
+    borderRadius: 8,
+    fontSize: "$lg",
+    width: "27%",
+    margin: "3rem 7rem",
+    height: "auto",
+    "a": {
+        textDecoration: "none",
+        color: 'white',
+        cursor: "pointer"
+    }
+});

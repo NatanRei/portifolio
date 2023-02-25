@@ -13,7 +13,6 @@ const years = String(diffDate["years"]).padStart(2, '0')
   const days = String(diffDate["days"]).padStart(2, '0')
 
   return (
-    <div>
     <CounterContainer>
       <div>
         <div>
@@ -39,9 +38,5 @@ const years = String(diffDate["years"]).padStart(2, '0')
         <i>dias</i>
       </div>
     </CounterContainer>
-    
-
-    
-    </div>
   )
 }

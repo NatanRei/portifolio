@@ -8,7 +8,7 @@ export const FooterContainer = styled("footer", {
     justifyContent: "center",
     zIndex: 200,
 
-    background: "$gray800"
+    background: "$gray900"
 });
 
 export const FooterHeart = styled(Heart, {
