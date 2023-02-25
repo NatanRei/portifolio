@@ -9,7 +9,6 @@ export const CounterContainer = styled("div", {
     display: 'flex',
     gap: '0.875rem',
     'div': {
-        background: '$gray700',
         padding: '0',
         borderRadius: '8px',
         textAlign: 'center',

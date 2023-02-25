@@ -24,6 +24,7 @@ export const HeaderIcons = styled("div", {
 export const HeaderIcon = styled("a", {
     margin: "0 1rem",
     textDecoration: "none",
+    color: "$gray300",
     cursor: "pointer",
     '&:hover': {
         color: "white",

@@ -1,5 +1,8 @@
 import { styled } from "../../../../styles";
 
+
+
+
 export const InitialContainer = styled("div", {
     width: "100%",
     display: "flex",
@@ -11,10 +14,11 @@ export const InitialContainer = styled("div", {
         top: 0,
         right: 0,
         zIndex: -3,
-        backgroundImage: 'url("https://ntnconsultoria.com.br/webAcess/img/onebg.jpeg")',
-        backgroundSize: 'cover',
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "right 35% bottom 45%",
+        background: "linear-gradient(180deg, #434343 0%, #232323 38.54%, #0A0A0A 100%)",
+        // backgroundImage: 'url("https://ntnconsultoria.com.br/webAcess/img/onebg.jpeg")',
+        // backgroundSize: 'cover',
+        // backgroundRepeat: "no-repeat",
+        // backgroundPosition: "right 35% bottom 45%",
         height: '100vh',
         width: '100%',
         opacity: 0.5,
@@ -28,40 +32,57 @@ export const TitleContainer = styled("div", {
     flexDirection: "column",
 
     alignItems: "start",
-    margin: "20% 0 0 15%"
+    margin: "20% 0 0 7%",
+    zIndex: 3
 });
 
 export const Title = styled("h1", {
-    fontSize: "$6xl"
+    fontFamily: "Anek Devanagari",
+    marginBottom: -40,
+    fontWeight: 400,
+    fontSize: "$5xl"
+    
 });
 export const SubTitle = styled("h1", {
-    fontSize: "$xxl"
+    fontSize: "$xxl",
+    color: "#9F9F9F"
 });
 
-export const Sun = styled("div", {
+export const Moon = styled("div", {
     position: "absolute",
-    top: "40%",
-    left: "50%",
+    left: "31%",
     backgroundRepeat: "no-repeat",
-    width: 200,
-    height: 200,
-    backgroundImage: 'url(../../../src/assets/sun.svg)',
-    'svg': {
-        fill: "white",
-    }
+    width: 610,
+    height:610,
+    backgroundImage: 'url(../../../src/assets/moon.svg)',
+});
+
+export const Stars = styled("div", {
+    position: "absolute",
+    backgroundRepeat: "no-repeat",
+    width: "100%",
+    height:"70vh",
+    backgroundImage: 'url(../../../src/assets/stars.svg)',
 });
    
-//   #mountain {
-//     background-repeat: no-repeat;
-//     background-size: 110% auto;
-//     fill: rgb(95, 80, 58);
-  
-//     background-image: url(../assets/mountain_layer_two.svg);
-//   }
-  
-//   #jungle5 {
-//     background-size: 110% auto;
-//     background-image: url(../assets/mountain_layer_one.svg);
-//     /* position: fixed; */
-  
-//   }
+
+export const Forest = styled('img', {
+    position: "absolute",
+    width: "100%",
+    bottom: 0,
+    zIndex: 4
+});
+
+export const ForestTwo = styled("img", {
+    position: "absolute",
+    width: "100%",
+    bottom: 0,
+    zIndex: 3
+});
+
+export const ForestThree = styled("img", {
+    position: "absolute",
+    width: "100%",
+    bottom: 0,
+    zIndex: 2
+});

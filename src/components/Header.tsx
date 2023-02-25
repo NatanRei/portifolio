@@ -19,12 +19,12 @@ export const Header = () => {
     return (
         <HeaderContainer style={{ opacity: opacity }}>
             <HeaderIcons>
-                <HeaderIcon>NTN</HeaderIcon>
+                <HeaderIcon href="#home">NTN</HeaderIcon>
             </HeaderIcons>
             <HeaderIcons>
-                <HeaderIcon>Sobre</HeaderIcon>
-                <HeaderIcon>Projetos</HeaderIcon>
-                <HeaderIcon>Contate-me</HeaderIcon>
+                <HeaderIcon href="#about">Natan Quem?</HeaderIcon>
+                <HeaderIcon href="#projects">Projetos</HeaderIcon>
+                <HeaderIcon href="#contact">Contate-me</HeaderIcon>
             </HeaderIcons>
         </HeaderContainer>
     );
