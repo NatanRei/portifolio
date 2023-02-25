@@ -23,14 +23,16 @@ export function TextLoop() {
   }, []);
 
     const items: string[] = [
-        "React",
+        "React.js",
         "Redux",
-        "Node",
+        "Node.js",
         "Express",
-        "MongoDB",
         "GraphQL",
         "Laravel",
         "PHP",
+        "MongoDB",
+        "MySQL",
+        "Firebase",
         "Docker",
         "Python",
         "Selenium",
@@ -41,7 +43,7 @@ export function TextLoop() {
     const padding = width / items.length;
     return (
       <ScrollerContainer>
-          <Scroller gradient={false} pauseOnHover speed={80} className="marquee" direction="left">
+          <Scroller gradient={false} pauseOnHover speed={50} className="marquee" direction="left">
             {items.map((item) => (
             <Text 
               target='_blank' 
