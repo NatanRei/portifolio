@@ -37,7 +37,8 @@ export function TextLoop() {
         "AWS EC2",
         "Python",
         "Selenium",
-        "CyberSecurity"
+        "CyberSecurity",
+        "Figma"
     ];
 
     const { width } = windowDimensions;

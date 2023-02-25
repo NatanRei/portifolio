@@ -1,4 +1,5 @@
 import { Paragraph } from "../About/About.styles";
+import { Blog } from "./components/blog";
 import { Card3D } from "./components/card3d";
 import { Laptop } from "./components/laptop";
 import { ProjectsContainer, RowAlignContainer } from "./Projects.styles";
@@ -15,12 +16,21 @@ export function Projects() {
             <RowAlignContainer>
                 <Laptop />
                 <Paragraph>
-                    <>Laptop com a clássica capa do Kali Linux. O estudo de Cyber Segurança é um de meus Hobies.</>
+                    <>Laptop com a clássica capa do Kali Linux. O estudo de Cyber Segurança é um de meus Hobbies.</>
                 </Paragraph>
             </RowAlignContainer>
             <RowAlignContainer>
-            <>Arumar responsivo</>
+                <Paragraph>
+                    <>Tech Now, um Blog feito utilizando next.js no front, e strapi como headless CMS</>
+                </Paragraph>
+                <Blog />
+            </RowAlignContainer>
+
+
+
+            <RowAlignContainer>
             <iframe scrolling="no" width="600" height="500" src="https://peaceful-fermat-a4dc3a.netlify.app/" />
+            <>Arumar responsivo</>
             </RowAlignContainer>
             <RowAlignContainer>
             <iframe scrolling="no" width="600" height="500" src="https://zealous-borg-4b8c3c.netlify.app/" />
