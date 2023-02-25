@@ -1,8 +1,8 @@
-import { AboutContainer, BoxContainer, Paragraph } from "./About.styles";
+import { AboutContainer, BoxContainer } from "./About.styles";
 import {formatDistanceToNow} from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR';
-import { diffBetweenDates } from "../../../../services/date";
 import { Counter } from "./components/Counter";
+import { Paragraph } from "../../../Home.styles";
 
 export function About() {
     const initOfNatanProgramingCarrer = new Date("2020-09-01");

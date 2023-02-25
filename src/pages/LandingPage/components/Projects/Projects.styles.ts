@@ -5,6 +5,7 @@ export const ProjectsContainer = styled("div", {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: '3rem'
 });
 
 export const RowAlignContainer = styled("div", {
