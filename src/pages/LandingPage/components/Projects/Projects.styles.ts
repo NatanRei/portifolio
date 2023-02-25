@@ -8,7 +8,8 @@ export const ProjectsContainer = styled("div", {
 });
 
 export const RowAlignContainer = styled("div", {
-    width: "100%",
+    marginTop: '2rem',
+    width: "80%",
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-evenly',

@@ -5,7 +5,7 @@ export const BoxContainer = styled("a", {
     width: "240px",
     height: "426px",
     background: "rgba(0, 0, 0, .1)",
-    transform: "rotate(0deg) skew(-25deg) scale(.8)",
+    transform: "rotate(0deg) skew(-15deg) scale(.8)",
     ".layer": {
         position: "absolute",
         top: 0,
@@ -13,7 +13,7 @@ export const BoxContainer = styled("a", {
         display: "block",
         width: "100%",
         height: "100%",
-        background: "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmX7wEen8jF9T7wB95xuLe3mKn6dPtv6_VuAYJHpJ3rR2zv9UYwhANJ-5k1oh4DoGZ1ys&usqp=CAU)",
+        background: "url(../../../../src/assets/projectOneBg.jpeg)",
         backgroundSize: "cover",
         transition: "0.5s",
     },

@@ -1,3 +1,4 @@
+import { Paragraph } from "../About/About.styles";
 import { Card3D } from "./components/card3d";
 import { Laptop } from "./components/laptop";
 import { ProjectsContainer, RowAlignContainer } from "./Projects.styles";
@@ -6,12 +7,16 @@ export function Projects() {
     return (
         <ProjectsContainer>
             <RowAlignContainer>
-            <>Esse é top</>
-            <Card3D />
+                <Paragraph>
+                    <>Esse é um card simples, pode ser feito somente com HTML5 e CSS3, clique nele para ver o código.</>
+                </Paragraph>
+                <Card3D />
             </RowAlignContainer>
             <RowAlignContainer>
-            <Laptop />
-            <>Esse é top</>
+                <Laptop />
+                <Paragraph>
+                    <>Laptop com a clássica capa do Kali Linux. O estudo de Cyber Segurança é um de meus Hobies.</>
+                </Paragraph>
             </RowAlignContainer>
             <RowAlignContainer>
             <>Arumar responsivo</>
@@ -25,9 +30,11 @@ export function Projects() {
             <>ARRUMAR RESPONSIVO</>
             <iframe scrolling="no" width="1200" height="900" src="https://fabulous-moonbeam-3eefdd.netlify.app/" />
             </RowAlignContainer>
-            
+            {/* <RowAlignContainer>
+            <iframe width="1200" height="900" src="https://enchanting-malabi-947e9d.netlify.app/" />
+            <>ARRUMAR STORAGE</>
+            </RowAlignContainer> */}
             projects: projects to put here: 
-            https://enchanting-malabi-947e9d.netlify.app/ (arrumar storage antes)
             https://github.com/NatanRei/simple-social-media
             blog frontend https://blog-front-end-one.vercel.app/ todos os projetos que estão lá
             https://ntn-shop.vercel.app/ shop
