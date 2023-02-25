@@ -22,5 +22,5 @@ export const Scroller = styled(Marquee, {
 
 export const Text = styled("a", {
     textDecoration: 'none',
-    color: "$gray100"
+    color: "$gray600"
 });

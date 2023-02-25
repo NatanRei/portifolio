@@ -39,8 +39,6 @@ export function Initial() {
             <Forest src={ForestSvg} />
             <ForestTwo style={{ transform: `translateY(-${offsetY * 0.0625}px)`}} src={ForestSvgTwo} />
             <ForestThree style={{ transform: `translateY(-${offsetY * 0.1}px)`}} src={ForestSvgThree} />
-
-
             <TitleContainer>
             <Title style={{ transform: `translateY(${offsetY * 0.3}px)`}}>Natan Reis Chmura</Title>
             <SubTitle style={{ transform: `translateY(${offsetY * 0.4}px)` }}>Full Stack Developer</SubTitle>
