@@ -1,14 +1,30 @@
 import { useEffect, useState } from "react";
 import { TextLoop } from "../../../../components/TextLoop";
-import { InitialContainer, SubTitle, Sun, Title, TitleContainer } from "./Initial.styles";
+import { Forest, ForestThree, ForestTwo, InitialContainer, Moon, Stars, SubTitle, Title, TitleContainer } from "./Initial.styles";
+
+import ForestSvg from '../../../../assets/forest.svg'
+import ForestSvgTwo from '../../../../assets/forest2.svg'
+import ForestSvgThree from '../../../../assets/forest3.svg'
+
 
 export function Initial() {
 
-    const [offsetY, setOffsetY] = useState(0);
+  const [offsetY, setOffsetY] = useState(0);
+  const [ opacity, setOpacity ] = useState(1);
   const handleScroll = () => {
-    // if(window.pageYOffset < 400) {
-        setOffsetY(window.pageYOffset)
-    // }
+    const pageOffset = window.pageYOffset
+    setOffsetY(pageOffset)
+    const widowHeight = window.innerHeight
+    if(pageOffset > widowHeight) {
+      setOpacity(0);
+    } else if (pageOffset == 0) {
+      setOpacity(1);
+    } else {
+      let opacityPercent = ((pageOffset * 100) / widowHeight)
+      opacityPercent = opacityPercent > 100 ? 100 : opacityPercent < 0 ? 0 : opacityPercent;
+      console.log(opacityPercent / 100);
+        setOpacity(1 - (opacityPercent / 100));
+    }
 };
 
   useEffect(() => {
@@ -18,11 +34,16 @@ export function Initial() {
 
     return (
         <InitialContainer>
-            {/* <Sun style={{ transform: `translateY(${offsetY * 1}px)` }} /> */}
-            
+            <Moon  style={{ transform: `translateY(${offsetY * 0.5}px)  rotate(-${offsetY * 0.5}deg` }} />
+            <Stars  style={{ transform: `translateY(${offsetY * 1}px)`, opacity: opacity}} />
+            <Forest src={ForestSvg} />
+            <ForestTwo style={{ transform: `translateY(-${offsetY * 0.0625}px)`}} src={ForestSvgTwo} />
+            <ForestThree style={{ transform: `translateY(-${offsetY * 0.1}px)`}} src={ForestSvgThree} />
+
+
             <TitleContainer>
-            <Title style={{ transform: `translate(${offsetY * 0.7}px, -${offsetY * 0.9}px) rotate(-${offsetY * 0.07}deg)`}}>NATAN REIS CHMURA</Title>
-            <SubTitle style={{ transform: `translateX(-${offsetY * 1.9}px)` }}>Full Stack Developer</SubTitle>
+            <Title style={{ transform: `translateY(${offsetY * 0.3}px)`}}>Natan Reis Chmura</Title>
+            <SubTitle style={{ transform: `translateY(${offsetY * 0.4}px)` }}>Full Stack Developer</SubTitle>
             </TitleContainer>
             <TextLoop />
         </InitialContainer>

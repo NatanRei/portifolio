@@ -18,7 +18,6 @@ export function Contact() {
         let percentage = (zero * 100) / (elementLenght * 1)
         percentage = percentage > 100 ? 100 : percentage < 0 ? 0 : percentage
         translate = 35 * ( 1- (percentage / 100))
-        console.log(translate)
     }
     useEffect(() => {
       window.addEventListener("scroll", handleScroll);

@@ -8,11 +8,13 @@ export const TextLoopContainer = styled("div", {
     whiteSpace: 'nowrap',
     display: 'flex',
     justifyContent: 'space-between',
-    marginBottom: '10rem'
+    marginBottom: '10rem',
+    
 });
 export const ScrollerContainer = styled('div', {
     fontSize: '$lg',
     marginBottom: '2%',
+    zIndex: 5
 })
 export const Scroller = styled(Marquee, {
     fontSize: '$lg',
