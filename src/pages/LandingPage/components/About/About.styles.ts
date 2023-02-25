@@ -14,10 +14,15 @@ export const BoxContainer = styled("div", {
     width: "100%",
     display: "flex",
     flexDirection: "row",
-    alignContent: "center"
+    alignItems: "center",
+    justifyContent: "center",
+
 });
 
-export const ParagraphContainer = styled("div", {
+export const Paragraph = styled("p", {
+    border: "1px solid $gray700",
+    padding: "2rem",
+    borderRadius: 8,
     fontSize: "$lg",
     width: "27%",
     margin: "3rem 7rem",

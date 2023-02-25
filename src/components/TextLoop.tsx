@@ -34,6 +34,7 @@ export function TextLoop() {
         "MySQL",
         "Firebase",
         "Docker",
+        "AWS EC2",
         "Python",
         "Selenium",
     ];
