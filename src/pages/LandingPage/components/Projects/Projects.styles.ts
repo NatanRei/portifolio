@@ -1,11 +1,12 @@
 import { styled } from "../../../../styles";
 
 export const ProjectsContainer = styled("div", {
+    width: "100%",
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: '3rem'
+    margin: '3rem'
 });
 
 export const RowAlignContainer = styled("div", {
@@ -15,4 +16,7 @@ export const RowAlignContainer = styled("div", {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: 'center',
+    '@lg': {
+        flexDirection: 'column',
+    }
 });
