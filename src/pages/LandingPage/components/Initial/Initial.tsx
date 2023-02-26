@@ -13,8 +13,13 @@ export function Initial() {
   const [ opacity, setOpacity ] = useState(1);
   const handleScroll = () => {
     const pageOffset = window.pageYOffset
-    setOffsetY(pageOffset)
     const widowHeight = window.innerHeight
+    const widowWidth = window.innerWidth
+    if(widowWidth > 768) {
+      setOffsetY(pageOffset)
+    } else {
+      setOffsetY(0)
+    }
     if(pageOffset > widowHeight) {
       setOpacity(0);
     } else if (pageOffset == 0) {
@@ -33,7 +38,7 @@ export function Initial() {
 
     return (
         <InitialContainer>
-            <Moon  style={{ transform: `translateY(${offsetY * 0.5}px)  rotate(-${offsetY * 0.5}deg` }} />
+            <Moon  style={{ transform: `translateY(${offsetY * 0.5}px)  rotate(-${offsetY * 0.5}deg`, opacity: opacity }} />
             <Stars  style={{ transform: `translateY(${offsetY * 1}px)`, opacity: opacity}} />
             <Forest src={ForestSvg} />
             <ForestTwo style={{ transform: `translateY(-${offsetY * 0.0625}px)`}} src={ForestSvgTwo} />

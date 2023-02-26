@@ -9,10 +9,10 @@ export function Blog() {
         <BlogContainer>
             <BlogImages className="blog-images">
             <BlogImage>
-                <img src={White} alt="blog no tema claro" style={{ width:'490px', height:'270px' }} />
+                <img src={White} alt="blog no tema claro" />
             </BlogImage>
             <BlogImageBack>
-                <img src={Dark} alt="blog no tema escuro" style={{ width:'490px', height:'270px' }} />
+                <img src={Dark} alt="blog no tema escuro" />
             </BlogImageBack>
             </BlogImages>
         </BlogContainer>

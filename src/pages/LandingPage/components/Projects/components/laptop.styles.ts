@@ -1,6 +1,7 @@
 import { styled } from "../../../../../styles";
 
 export const LaptopContainer = styled("a", {
+    fontSize: "16px",
     marginTop: "10rem",
     position: "initial",
     top: "50%",

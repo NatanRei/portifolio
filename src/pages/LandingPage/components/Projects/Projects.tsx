@@ -1,6 +1,7 @@
 import { Paragraph } from "../../../Home.styles";
 import { Blog } from "./components/blog";
 import { Card3D } from "./components/card3d";
+import HoverZoom from "./components/hoverZoom";
 import { Laptop } from "./components/laptop";
 import { ProjectsContainer, RowAlignContainer, RowAlignReverseContainer } from "./Projects.styles";
 
@@ -28,16 +29,18 @@ export function Projects() {
             <RowAlignReverseContainer className="row-align">
                 <iframe width="235" height="290" src="https://production--kaleidoscopic-liger-5074ba.netlify.app/" />
                 <Paragraph>
-                        <a href="https://production--kaleidoscopic-liger-5074ba.netlify.app/" target="_blank">Uma bateria, só clicar e fazer a sua música</a>
+                        <a href="https://production--kaleidoscopic-liger-5074ba.netlify.app" target="_blank">Uma bateria, só clicar e fazer a sua música</a>
                 </Paragraph>
             </RowAlignReverseContainer>
-
-
-            {/* <RowAlignContainer className="row-align">
-            <iframe scrolling="no" width="600" height="500" src="https://peaceful-fermat-a4dc3a.netlify.app/" />
-            <>Arumar responsivo</>
-            </RowAlignContainer>
+            
             <RowAlignContainer className="row-align">
+                <Paragraph>
+                        <a href="https://codepen.io/natanrei/full/LYjvQmB" target="_blank">Gerador de frases aleatórias</a>
+                </Paragraph>
+                <a href="https://codepen.io/natanrei/full/LYjvQmB" target="_blank"><HoverZoom /></a>
+                
+            </RowAlignContainer>
+            {/* <RowAlignContainer className="row-align">
             <iframe scrolling="no" width="600" height="500" src="https://zealous-borg-4b8c3c.netlify.app/" />
             <>Arrumar responsivo</>
             </RowAlignContainer>

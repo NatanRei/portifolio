@@ -7,6 +7,11 @@ export const BlogContainer = styled("div", {
     perspective: 1200,
     "&:hover .blog-images": {
         transform:'rotateY(180deg)'
+    },
+    '@lg': {
+        marginTop: '1rem',
+        width: 343,
+        height: 189,
     }
 });
 
@@ -27,6 +32,14 @@ export const BlogImage = styled("div", {
   height: '100%',
   '-webkit-backface-visibility': 'hidden',
   backfaceVisibility: 'hidden',
+  "img": {
+    width: 490,
+    height: 270,
+    '@lg': {
+        width: 343,
+        height: 189,
+    }
+  }
 });
 
 export const BlogImageBack = styled(BlogImage, {
