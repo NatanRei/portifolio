@@ -22,6 +22,9 @@ export const Paragraph = styled("p", {
         width: "40%",
     },
     '@lg': {
+        fontSize: "$md",
+        margin: "1.5rem 0rem",
+        padding: "1.5rem",
         width: "80%",
     },
     '@md': {
