@@ -21,5 +21,8 @@ export const Icons = styled("div", {
         margin: "0 3rem",
         textDecoration: "none",
         color: "white",
+        "@sm": {
+            margin: "0 1rem",
+        }
     }
 });
