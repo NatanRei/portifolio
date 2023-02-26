@@ -20,3 +20,9 @@ export const RowAlignContainer = styled("div", {
         flexDirection: 'column',
     }
 });
+
+export const RowAlignReverseContainer = styled(RowAlignContainer, {
+    '@lg': {
+        flexDirection: 'column-reverse',
+    }
+});

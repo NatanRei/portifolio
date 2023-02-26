@@ -2,7 +2,7 @@ import { Paragraph } from "../../../Home.styles";
 import { Blog } from "./components/blog";
 import { Card3D } from "./components/card3d";
 import { Laptop } from "./components/laptop";
-import { ProjectsContainer, RowAlignContainer } from "./Projects.styles";
+import { ProjectsContainer, RowAlignContainer, RowAlignReverseContainer } from "./Projects.styles";
 
 export function Projects() {
     return (
@@ -13,24 +13,24 @@ export function Projects() {
                 </Paragraph>
                 <Card3D />
             </RowAlignContainer>
-            <RowAlignContainer className="row-align">
+            <RowAlignReverseContainer className="row-align">
                 <Laptop />
                 <Paragraph>
                     <>Laptop com a clássica capa do Kali Linux. O estudo de Cyber Segurança é um de meus Hobbies.</>
                 </Paragraph>
-            </RowAlignContainer>
+            </RowAlignReverseContainer>
             <RowAlignContainer className="row-align">
                 <Paragraph>
                     <>Tech Now, um Blog feito utilizando Next.js no front, e Strapi como headless CMS</>
                 </Paragraph>
                 <Blog />
             </RowAlignContainer>
-            <RowAlignContainer className="row-align">
+            <RowAlignReverseContainer className="row-align">
                 <iframe width="235" height="290" src="https://production--kaleidoscopic-liger-5074ba.netlify.app/" />
                 <Paragraph>
                         <a href="https://production--kaleidoscopic-liger-5074ba.netlify.app/" target="_blank">Uma bateria, só clicar e fazer a sua música</a>
                 </Paragraph>
-            </RowAlignContainer>
+            </RowAlignReverseContainer>
 
 
             {/* <RowAlignContainer className="row-align">
