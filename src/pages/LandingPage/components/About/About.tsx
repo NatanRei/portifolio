@@ -1,4 +1,4 @@
-import { AboutContainer, BoxContainer } from "./About.styles";
+import { AboutContainer, BoxContainer, BoxTitleContainer } from "./About.styles";
 import {formatDistanceToNow} from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR';
 import { Counter } from "./components/Counter";
@@ -32,9 +32,9 @@ export function About() {
                 Atualmente, trabalho como desenvolvedor backend, minhas principais ferramentas são: Laravel, MySQL, Python... 
             </Paragraph>
             </BoxContainer>
-            <BoxContainer style={{ fontSize: '1.875rem', marginTop: '2rem' }}>
+            <BoxTitleContainer>
                 Veja alguns projetinhos bacanas que fiz:
-            </BoxContainer>
+            </BoxTitleContainer>
         </AboutContainer>
     );
 }

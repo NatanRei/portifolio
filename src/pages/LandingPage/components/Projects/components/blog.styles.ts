@@ -2,8 +2,8 @@ import { styled } from "../../../../../styles";
 
 export const BlogContainer = styled("div", {
     backgroundColor: 'transparent',
-    width: 300,
-    height: 300,
+    width: 490,
+    height: 270,
     perspective: 1200,
     "&:hover .blog-images": {
         transform:'rotateY(180deg)'

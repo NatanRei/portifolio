@@ -16,6 +16,13 @@ export const CounterContainer = styled("div", {
         'i': {
             fontSize: '1rem',
         }
+    },
+    '@xl': {
+        margin: "-3rem 0 1.5rem",
+        fontSize: '4rem',
+    },
+    '@md': {
+        fontSize: '3rem',
     }
     
 });

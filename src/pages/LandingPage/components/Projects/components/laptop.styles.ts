@@ -5,10 +5,10 @@ export const LaptopContainer = styled("a", {
     position: "initial",
     top: "50%",
     left: "50%",
-    transform: "translate(-50%, -50%) rotate(-5deg)",
+    transform: "translateY(-50%) rotate(-5deg)",
     transition: '1s',
     "&:hover":{
-        transform: "translate(-50%, -50%) rotate(5deg)",
+        transform: "translateY(-50%) rotate(5deg)",
     },
     ".laptop": {
         width: "21.5rem",

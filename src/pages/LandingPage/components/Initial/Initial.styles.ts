@@ -38,12 +38,13 @@ export const TitleContainer = styled("div", {
 
 export const Title = styled("h1", {
     fontFamily: "Anek Devanagari",
-    marginBottom: -40,
     fontWeight: 400,
+    lineHeight: 1,
     fontSize: "$5xl"
     
 });
 export const SubTitle = styled("h1", {
+
     fontSize: "$xxl",
     color: "#9F9F9F"
 });
