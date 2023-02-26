@@ -29,28 +29,11 @@ export const globalStyles = globalCss({
         fontFamily: 'Roboto',
         fontWeight: 400,
     },
-    "@media only screen and (max-width: 1408px)": {
-        HeaderContainer: {
-            
+    "html": {
+        "@lg": {
+            fontSize: "87.5%"
         },
-        ".row-align": {
-            flexDirection: 'column',
-        }
-    },
-    "@media only screen and (min-width: 1216px)": {
-        ".row-align": {
-            flexDirection: 'column',
-        }
-    },
-    // "@lg": {
-    //     ".row-align": {
-    //         flexDirection: 'column',
-    //     }
-    // },
-    "@media only screen and (max-width: 768px)": {
-        ".row-align": {
-
-        }
-    },
+    }
+    
 
 })
