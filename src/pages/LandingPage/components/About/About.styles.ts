@@ -1,12 +1,17 @@
 import { styled } from "../../../../styles";
 
 export const AboutContainer = styled("div", {
-    boxShadow:'rgb(0 0 0 / 50%) 0px -75px 45px',
     width: "100%",
-    margin: "1rem 0rem",
-    padding: '7rem',
+    margin: "1rem",
+    padding: '7rem 7rem 0',
     'h2': {
         fontSize: '$2xl'
+    },
+    '@xl': {
+        padding: '1rem',
+    },
+    '@sm': {
+        margin: '0',
     }
 
 });
@@ -15,14 +20,18 @@ export const BoxContainer = styled("div", {
     width: "100%",
     display: "flex",
     flexDirection: "row",
-    alignContent: "center"
+    alignItems: "center",
+    justifyContent: "center",
+    '@xl': {
+        flexDirection: "column",
+        marginBottom: "1rem",
+    }
 });
 
-export const ParagraphContainer = styled("div", {
-    fontSize: "$lg",
-    width: "27%",
-    margin: "3rem 7rem",
-    height: "auto"
+export const BoxTitleContainer = styled(BoxContainer, {
+    fontSize: '1.875rem', 
+    marginTop: '2rem',
+    '@xl': {
+        fontSize: '1.5rem', 
+    }
 });
-
-

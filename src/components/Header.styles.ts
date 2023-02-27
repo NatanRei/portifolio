@@ -5,7 +5,7 @@ export const HeaderContainer = styled("header", {
     top: 0,
     left: 0,
     zIndex: 200,
-    width: "100%",
+    width: "100vw",
     height: "3.5rem",
     display: "flex",
     alignItems: "center",

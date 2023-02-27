@@ -22,7 +22,7 @@ export const Header = () => {
                 <HeaderIcon href="#home">NTN</HeaderIcon>
             </HeaderIcons>
             <HeaderIcons>
-                <HeaderIcon href="#about">Sobre</HeaderIcon>
+                <HeaderIcon href="#about">Natan Quem?</HeaderIcon>
                 <HeaderIcon href="#projects">Projetos</HeaderIcon>
                 <HeaderIcon href="#contact">Contate-me</HeaderIcon>
             </HeaderIcons>

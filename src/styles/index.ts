@@ -11,15 +11,24 @@ export const {
     createTheme 
 } = createStitches({
   media: {
-    sm: '(min-width: 640px)',
-    md: '(min-width: 768px)',
-    lg: '(min-width: 1024px)',
+    sm: '(max-width: 640px)',
+    md: '(max-width: 768px)',
+    lg: '(max-width: 1024px)',
+    xl: '(max-width: 1216px)',
+    xxl: '(max-width: 1408px)',
   },
   theme: {
     colors: {
       white: '#fff',
       gray900: '#121214',
       gray800: '#202024',
+
+
+      gray700: '#7c7a7c',
+      gray600: '#919392',
+
+      gray500: '#a1a3a2',
+
       gray300: '#c4c4cc',
       gray100: '#e1e1e6',
 
