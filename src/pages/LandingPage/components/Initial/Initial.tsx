@@ -2,11 +2,6 @@ import { useEffect, useState } from "react";
 import { TextLoop } from "../../../../components/TextLoop";
 import { Forest, ForestThree, ForestTwo, InitialContainer, Moon, Stars, SubTitle, Title, TitleContainer } from "./Initial.styles";
 
-import ForestSvg from '../../../../assets/forest.svg'
-import ForestSvgTwo from '../../../../assets/forest2.svg'
-import ForestSvgThree from '../../../../assets/forest3.svg'
-
-
 export function Initial() {
 
   const [offsetY, setOffsetY] = useState(0);
@@ -40,9 +35,9 @@ export function Initial() {
         <InitialContainer>
             <Moon  style={{ transform: `translateY(${offsetY * 0.5}px)  rotate(-${offsetY * 0.5}deg`, opacity: opacity }} />
             <Stars  style={{ transform: `translateY(${offsetY * 1}px)`, opacity: opacity}} />
-            <Forest src={ForestSvg} />
-            <ForestTwo style={{ transform: `translateY(-${offsetY * 0.0625}px)`}} src={ForestSvgTwo} />
-            <ForestThree style={{ transform: `translateY(-${offsetY * 0.1}px)`}} src={ForestSvgThree} />
+            <Forest src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest.svg" />
+            <ForestTwo style={{ transform: `translateY(-${offsetY * 0.0625}px)`}} src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest2.svg" />
+            <ForestThree style={{ transform: `translateY(-${offsetY * 0.1}px)`}} src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest3.svg" />
             <TitleContainer>
             <Title style={{ transform: `translateY(${offsetY * 0.3}px)`}}>Natan Reis Chmura</Title>
             <SubTitle style={{ transform: `translateY(${offsetY * 0.4}px)` }}>Full Stack Developer</SubTitle>
