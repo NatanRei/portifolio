@@ -54,7 +54,7 @@ export const Moon = styled("div", {
     backgroundRepeat: "no-repeat",
     width: 610,
     height:610,
-    backgroundImage: 'url(../../../src/assets/moon.svg)',
+    backgroundImage: 'url(https://ntnconsultoria.com.br/webAcess/img/portifolio/moon.svg)',
     "@lg": {
         width: 400,
         height: 400,
@@ -77,7 +77,7 @@ export const Stars = styled("div", {
     backgroundRepeat: "no-repeat",
     width: "100%",
     height:"70vh",
-    backgroundImage: 'url(../../../src/assets/stars.svg)',
+    backgroundImage: 'url(https://ntnconsultoria.com.br/webAcess/img/portifolio/stars.svg)',
 });
    
 

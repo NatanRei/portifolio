@@ -13,7 +13,7 @@ export const BoxContainer = styled("a", {
         display: "block",
         width: "100%",
         height: "100%",
-        background: "url(../../../../src/assets/projectOneBg.jpeg)",
+        background: "url(https://ntnconsultoria.com.br/webAcess/img/portifolio/projectOneBg.jpeg)",
         backgroundSize: "cover",
         transition: "0.5s",
     },

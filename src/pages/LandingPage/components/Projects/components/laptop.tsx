@@ -4,7 +4,7 @@ export function Laptop() {
     return (
         <LaptopContainer target="_blank" href="https://github.com/NatanRei/laptop-html-css">
             <div className="laptop">
-                <img src="../../../../src/assets/projectTwoBg.jpg" alt="" />
+                <img src="https://ntnconsultoria.com.br/webAcess/img/portifolio/projectTwoBg.jpg" alt="" />
             </div>
         </LaptopContainer>
     )
