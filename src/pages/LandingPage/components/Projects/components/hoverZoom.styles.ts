@@ -1,6 +1,6 @@
 import { styled } from "../../../../../styles";
 
-export const HoverZoomContainer = styled("div", {
+export const HoverZoomContainer = styled("a", {
     backgroundColor: 'transparent',
     cursor: "pointer",
     width: 420,
