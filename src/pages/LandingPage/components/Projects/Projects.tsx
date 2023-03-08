@@ -42,7 +42,7 @@ export function Projects() {
             <RowAlignReverseContainer className="row-align">
                 <HoverLink />
                 <Paragraph>
-                        <a href="https://production--curious-sunflower-f79e30.netlify.app/" target="_blank">Um E-commerce, integrado com Strapi API</a>
+                        <a href="https://production--curious-sunflower-f79e30.netlify.app/" target="_blank">Um E-commerce, integrado com Stripe API</a>
                 </Paragraph>
             </RowAlignReverseContainer>
         </ProjectsContainer>
