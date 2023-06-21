@@ -4,6 +4,7 @@ import { Card3D } from "./components/card3d";
 import { HoverLink } from "./components/hoverLink";
 import HoverZoom from "./components/hoverZoom";
 import { Laptop } from "./components/laptop";
+import { List } from "./components/list";
 import { ProjectsContainer, RowAlignContainer, RowAlignReverseContainer } from "./Projects.styles";
 
 export function Projects() {
@@ -37,13 +38,22 @@ export function Projects() {
                 <Paragraph>
                         <a href="https://codepen.io/natanrei/full/LYjvQmB" target="_blank">Gerador de frases aleatórias</a>
                 </Paragraph>
-                <HoverZoom />
+                <HoverZoom 
+                    projectLink="https://codepen.io/natanrei/full/LYjvQmB" 
+                    projectImage="https://ntnconsultoria.com.br/webAcess/img/portifolio/projectQuoteGenerator.webp" 
+                />
             </RowAlignContainer>
             <RowAlignReverseContainer className="row-align">
                 <HoverLink />
                 <Paragraph>
                         <a href="https://production--curious-sunflower-f79e30.netlify.app/" target="_blank">Um E-commerce, integrado com Stripe API</a>
                 </Paragraph>
+            </RowAlignReverseContainer>
+            <RowAlignReverseContainer className="row-align">
+                <Paragraph>
+                        <a href="https://github.com/NatanRei/ntn-api-solid" target="_blank">API Completa, estilo GymPass</a>
+                </Paragraph>
+                <List />
             </RowAlignReverseContainer>
         </ProjectsContainer>
     );
