@@ -25,6 +25,7 @@ export function TextLoop() {
     const items: string[] = [
         "React.js",
         "Redux",
+        "Next.js",
         "Node.js",
         "Express",
         "GraphQL",
@@ -38,7 +39,11 @@ export function TextLoop() {
         "Python",
         "Selenium",
         "CyberSecurity",
-        "Figma"
+        "Figma",
+        "S.O.L.I.D.",
+        "Agile",
+        "Unit Tests",
+        "E2E Tests",
     ];
 
     const { width } = windowDimensions;
