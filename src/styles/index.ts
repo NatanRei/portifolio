@@ -20,15 +20,15 @@ export const {
   theme: {
     colors: {
       white: '#fff',
+      black: '#000',
+
+      gray1000: '#090909',
+      gray950: '#0a0c0c',
       gray900: '#121214',
       gray800: '#202024',
-
-
       gray700: '#7c7a7c',
       gray600: '#919392',
-
       gray500: '#a1a3a2',
-
       gray300: '#c4c4cc',
       gray100: '#e1e1e6',
 

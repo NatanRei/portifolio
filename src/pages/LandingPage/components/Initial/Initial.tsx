@@ -33,12 +33,12 @@ export function Initial() {
 
     return (
         <InitialContainer>
-            <Moon  style={{ transform: `translateY(${offsetY * 0.5}px)  rotate(-${offsetY * 0.5}deg`, opacity: opacity }}>
+            {opacity && <><Moon  style={{ transform: `translateY(${offsetY * 0.5}px)  rotate(-${offsetY * 0.5}deg`, opacity: opacity }}>
               <span role="img" aria-label="Lua"></span>
             </Moon>
             <Stars  style={{ transform: `translateY(${offsetY * 1}px)`, opacity: opacity}} >
               <span role="img" aria-label="Estrelas"></span>
-            </Stars>
+            </Stars></>}
             <Forest src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest.svg" alt="Primeira floresta" />
             <ForestTwo style={{ transform: `translateY(-${offsetY * 0.0625}px)`}} src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest2.svg" alt="Segunda floresta" />
             <ForestThree style={{ transform: `translateY(-${offsetY * 0.1}px)`}} src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest3.svg" alt="Terceira floresta" />
