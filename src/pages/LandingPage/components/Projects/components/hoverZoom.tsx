@@ -1,9 +1,15 @@
 import { HoverZoomContainer } from "./hoverZoom.styles";
 
-export default function HoverZoom() {
+interface HoverZoomProps {
+    projectLink: string;
+    projectImage: string;
+
+}
+
+export default function HoverZoom({projectLink, projectImage}: HoverZoomProps) {
     return (
-        <HoverZoomContainer href="https://codepen.io/natanrei/full/LYjvQmB" target="_blank">
-                <img src="https://ntnconsultoria.com.br/webAcess/img/portifolio/projectQuoteGenerator.webp" alt="Gerador de frases" />
+        <HoverZoomContainer href={projectLink} target="_blank">
+                <img src={projectImage} alt="Gerador de frases" />
         </HoverZoomContainer>
     );
 }
