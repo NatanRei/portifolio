@@ -14,7 +14,10 @@ export function Projects() {
                 <Paragraph>
                     <>Esse é um card simples, pode ser feito somente com HTML5 e CSS3, clique nele para ver o código.</>
                 </Paragraph>
-                <Card3D />
+                <Card3D 
+                    backgroundLink="https://ntnconsultoria.com.br/webAcess/img/portifolio/projectOneBg.webp"
+                    link="https://github.com/NatanRei/card3d-html-css"
+                />
             </RowAlignContainer>
             <RowAlignReverseContainer className="row-align">
                 <Laptop />
@@ -49,12 +52,12 @@ export function Projects() {
                         <a href="https://production--curious-sunflower-f79e30.netlify.app/" target="_blank">Um E-commerce, integrado com Stripe API</a>
                 </Paragraph>
             </RowAlignReverseContainer>
-            <RowAlignReverseContainer className="row-align">
+            <RowAlignContainer className="row-align">
                 <Paragraph>
                         <a href="https://github.com/NatanRei/ntn-api-solid" target="_blank">API Completa, estilo GymPass</a>
                 </Paragraph>
                 <List />
-            </RowAlignReverseContainer>
+            </RowAlignContainer>
         </ProjectsContainer>
     );
 }

@@ -1,8 +1,23 @@
 import { BoxContainer } from "./card3d.styles";
 
-export function Card3D() {
+interface Card3DProps {
+  backgroundLink: string;
+  link: string
+}
+
+export function Card3D({ backgroundLink, link }: Card3DProps) {
     return (
-        <BoxContainer target="_blank" href="https://github.com/NatanRei/card3d-html-css">
+        <BoxContainer 
+          css={{ 
+            '.layer': 
+              {
+                background: `url(${backgroundLink})`, 
+                backgroundSize: "cover",
+              } 
+          }} 
+          target="_blank" 
+          href={link}
+          >
             <div className="layer">
               <span role="img" aria-label="paisagem camada 1"></span>
             </div>
