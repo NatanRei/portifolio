@@ -1,4 +1,5 @@
-import { ListContainer } from "./list.styles";
+import { ArrowArcRight, ArrowRight } from "phosphor-react";
+import { Alt, ListContainer } from "./list.styles";
 
 export function List() {
     const items = [
@@ -20,6 +21,9 @@ export function List() {
                     items.map((item, i) => <li key={i}>{item}</li>)
                 }
             </ul>
+            <Alt>
+                Acesse agora <ArrowRight />
+            </Alt>
         </ListContainer>
     )
 }
