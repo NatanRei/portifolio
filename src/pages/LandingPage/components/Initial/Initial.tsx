@@ -43,7 +43,7 @@ export function Initial() {
 
     return (
         <InitialContainer>
-            {opacity && <><Moon  style={{ transform: `translateY(${offsetY * 0.5}px)  rotate(-${offsetY * 0.5}deg`, opacity: opacity }}>
+            {opacity && <><Moon  style={{ transform: `translateY(${offsetY * 0.5}px)  rotate(-${offsetY * 0.5}deg) scale(${( 1 - (offsetY * 0.0005))})`, opacity: opacity }}>
               <span role="img" aria-label="Lua"></span>
             </Moon>
             <Stars  style={{ transform: `translateY(${offsetY * 1}px)`, opacity: opacity}} >
@@ -54,8 +54,8 @@ export function Initial() {
             <ForestThree style={{ transform: `translateY(-${offsetY * 0.1}px)`}} src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest3.svg" alt="Terceira floresta" />
             {opacity && 
               <TitleContainer>
-              <Title style={{ transform: `translateY(${offsetY * 0.4}px)`}}>Natan Reis Chmura</Title>
-              <SubTitle style={{ transform: `translateY(${offsetY * 0.45}px)` }}>Full Stack Developer</SubTitle>
+              <Title style={{ transform: `translateY(${offsetY * 0.31}px)  translateX(${offsetY * 0.31}px)   scale(${( 1 + (offsetY * 0.001))})`}}>Natan Reis Chmura</Title>
+              <SubTitle style={{ transform: `translateY(${offsetY * 0.35}px) ` }}>Full Stack Developer</SubTitle>
               </TitleContainer>
             }
             <TextLoop />

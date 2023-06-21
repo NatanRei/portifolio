@@ -8,6 +8,6 @@ interface ScreenProps {
 
 export function Screen({ children, id, heightMin = false }: ScreenProps) {
     return (
-        <ScreenContainer id={id}>{ children }</ScreenContainer>
+        <ScreenContainer heightMin={heightMin} id={id}>{ children }</ScreenContainer>
     );
 }

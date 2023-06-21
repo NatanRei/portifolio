@@ -19,7 +19,7 @@ export const ScreenContainer = styled("section", {
         }
     },
     defaultVariants: {
-        heightMin: true
+        heightMin: false
     }
     
 });
