@@ -6,7 +6,7 @@ export const HomeContainer = styled("main", {
 });
 
 export const Paragraph = styled("p", {
-    backgroundColor: "$gray950",
+    backgroundColor: "rgb(10,12,12)",
     padding: "2rem",
     borderRadius: 8,
     fontSize: "$lg",
@@ -16,7 +16,7 @@ export const Paragraph = styled("p", {
 
     $$shadowGrayTop: '$colors$black',
     $$shadowGrayBottom: '$colors$gray1000',
-
+    background: 'linear-gradient(60deg, rgba(10,12,12,1) 0%, rgba(18,16,16,1) 50%, rgba(10,12,12,1) 100%)',
     boxShadow: ".4rem .4rem .7rem $$shadowGrayTop, -.25rem -.2rem .6rem $$shadowGrayBottom",
 
     
