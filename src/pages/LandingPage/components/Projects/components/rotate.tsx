@@ -6,7 +6,6 @@ interface RotateProps {
 }
 
 export function Rotate({ backgroundImgFront, backgroundImgBack }: RotateProps) {
-    console.log(backgroundImgFront, backgroundImgBack)
     return (
         <RotateContainer>
             <RotateImages className="rotate-images">
