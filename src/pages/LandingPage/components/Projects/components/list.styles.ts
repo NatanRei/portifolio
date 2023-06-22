@@ -1,4 +1,10 @@
-import { styled } from "../../../../../styles";
+import { styled, keyframes } from "../../../../../styles";
+
+const pulseAnimation = keyframes({
+    '0%': { transform: 'scale(1)' },
+    '50%': { transform: 'scale(1.07)' },
+    '100%': { transform: 'scale(1)' },
+});
 
 export const ListContainer = styled("a", {
     all: 'unset',
@@ -8,7 +14,13 @@ export const ListContainer = styled("a", {
     justifyContent: 'space-between',
     fontSize: '$lg',
     backgroundColor: 'transparent',
-    cursor: 'pointer'
+    cursor: 'pointer',
+
+    "&:hover": {
+        "div": {
+            animation: `${pulseAnimation} 1.5s linear infinite`,
+        }
+}
 })
 
 export const Alt = styled('div', {
@@ -17,5 +29,6 @@ export const Alt = styled('div', {
     marginLeft: '30px',
     svg: {
         marginLeft: 10
-    }
+    },
 })
+

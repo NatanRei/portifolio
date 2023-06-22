@@ -26,15 +26,31 @@ export function Contact() {
         <ContactContainer ref={elementRef}>
             <ContactTitle>Vamos conversar!</ContactTitle>
             <Icons>
-            <a style={{
-                 transform: `translateX(-${translate}vw)`
-                 }} target="_blank" href="https://www.linkedin.com/in/natan-reis-chmura-909780193/"><LinkedinLogo size={64} /></a>
+            <a 
+                style={{
+                    transform: `translateX(-${translate}vw)`
+                }} 
+                target="_blank" 
+                href="https://www.linkedin.com/in/natan-reis-chmura-909780193/"
+            >
+                <LinkedinLogo size={64} />
+            </a>
             <a style={{ 
                 transform: `translateY(${translate}vh)`
-                }} target="_blank" href="https://github.com/NatanRei"><GithubLogo size={64} /></a>
+                }} 
+                target="_blank" 
+                href="https://github.com/NatanRei"
+            >
+                <GithubLogo size={64} />
+            </a>
             <a style={{
                 transform: `translateX(${translate}vw)`
-                }} target="_blank" href="mailto:nreischmura@gmail.com?subject=Proposta irrecusável de $15k"><EnvelopeSimple size={64} /></a>
+                }} 
+                target="_blank" 
+                href="mailto:nreischmura@gmail.com?subject=Proposta irrecusável de $15k"
+            >
+                <EnvelopeSimple size={64} />
+            </a>
             </Icons>
         </ContactContainer>
     );
