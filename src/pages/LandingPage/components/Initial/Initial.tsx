@@ -50,7 +50,7 @@ export function Initial() {
               <span role="img" aria-label="Estrelas"></span>
             </Stars></>}
             <Forest src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest.svg" alt="Primeira floresta" />
-            <ForestTwo style={{ transform: `translateY(-${offsetY * 0.0625}px)`}} src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest2.svg" alt="Segunda floresta" />
+            <ForestTwo style={{ transform: `translateY(-${offsetY * 0.055}px)`}} src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest2.svg" alt="Segunda floresta" />
             <ForestThree style={{ transform: `translateY(-${offsetY * 0.1}px)`}} src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest3.svg" alt="Terceira floresta" />
             {opacity && 
               <TitleContainer>
