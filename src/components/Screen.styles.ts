@@ -7,14 +7,10 @@ export const ScreenContainer = styled("section", {
     variants: {
         heightMin: {
             true: {
-                '@sm': {
                     minHeight: "50vh",
-                }
             },
             false: {
-                '@sm': {
                     minHeight: "100vh",
-                }
             }
         }
     },
