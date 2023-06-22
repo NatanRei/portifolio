@@ -1,4 +1,4 @@
-import { styled } from "../../../../styles";
+import { styled, keyframes } from "../../../../styles";
 
 
 
@@ -72,12 +72,21 @@ export const Moon = styled("div", {
     }
 });
 
+const pulseStars = keyframes({
+    '0%': { opacity: 1 },
+    '25%': { opacity: 0.75 },
+    '50%': { opacity: 1 },
+    '75%': { opacity: 0.5 },
+    '100%': { opacity: 1 },
+});
+
 export const Stars = styled("div", {
     position: "absolute",
     backgroundRepeat: "no-repeat",
     width: "100%",
     height:"70vh",
     backgroundImage: 'url(https://ntnconsultoria.com.br/webAcess/img/portifolio/stars.svg)',
+    animation: `${pulseStars} 1.5s linear infinite`,
 });
    
 
