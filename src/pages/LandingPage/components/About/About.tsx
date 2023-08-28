@@ -1,8 +1,8 @@
-import { AboutContainer, BoxContainer, BoxTitleContainer } from "./About.styles";
-import {formatDistanceToNow} from 'date-fns'
+import { formatDistanceToNow } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
-import { Counter } from "./components/Counter";
 import { Paragraph } from "../../../Home.styles";
+import { AboutContainer, BoxContainer, BoxTitleContainer } from "./About.styles";
+import { Counter } from "./components/Counter";
 
 export function About() {
     const initOfNatanProgramingCarrer = new Date("2020-09-01");
@@ -29,7 +29,7 @@ export function About() {
                 Desde lá, sempre busco evolução constante nas áreas que a programação e tecnologia abrangem (todas?), mantendo-me alinhado com o mercado.
             </Paragraph>
             <Paragraph>
-                Atualmente, trabalho como desenvolvedor backend, minhas principais ferramentas são: Laravel, MySQL, Python... 
+                Atualmente, trabalho como desenvolvedor fullStack, minhas principais ferramentas são: ReactJs, Laravel, NodeJs... 
             </Paragraph>
             </BoxContainer>
             <BoxTitleContainer>
