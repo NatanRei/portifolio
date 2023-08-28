@@ -31,7 +31,7 @@ export function Projects() {
     
     function getTranslate(elementRef: React.MutableRefObject<null>) {
         const element: any = elementRef.current
-        const SENSITIVITY = 200
+        const SENSITIVITY = 350
         let translate = 0
             if(element) {
                 const whereElementStart = element.offsetTop

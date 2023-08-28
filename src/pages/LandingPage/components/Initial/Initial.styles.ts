@@ -1,4 +1,4 @@
-import { styled } from "../../../../styles";
+import { styled, keyframes } from "../../../../styles";
 
 
 
@@ -80,7 +80,6 @@ export const Stars = styled("div", {
     backgroundImage: 'url(https://ntnconsultoria.com.br/webAcess/img/portifolio/stars.svg)',
 });
    
-
 export const Forest = styled('img', {
     position: "absolute",
     width: "100%",
