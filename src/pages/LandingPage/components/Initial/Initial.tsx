@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { TextLoop } from "../../../../components/TextLoop";
 import { Forest, ForestThree, ForestTwo, InitialContainer, Moon, Stars, SubTitle, Title, TitleContainer } from "./Initial.styles";
+import ForestSvg from '@/assets/forest.svg'
+import Forest2Svg from '@/assets/forest2.svg'
+import Forest3Svg from '@/assets/forest3.svg'
+
 
 export function Initial() {
 
@@ -49,9 +53,9 @@ export function Initial() {
             <Stars  style={{ transform: `translateY(${offsetY * 1}px)`, opacity: opacity}} >
               <span role="img" aria-label="Estrelas"></span>
             </Stars></>}
-            <Forest src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest.svg" alt="Primeira floresta" />
-            <ForestTwo style={{ transform: `translateY(-${offsetY * 0.055}px)`}} src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest2.svg" alt="Segunda floresta" />
-            <ForestThree style={{ transform: `translateY(-${offsetY * 0.1}px)`}} src="https://ntnconsultoria.com.br/webAcess/img/portifolio/forest3.svg" alt="Terceira floresta" />
+            <Forest src={ForestSvg} alt="Primeira floresta" />
+            <ForestTwo style={{ transform: `translateY(-${offsetY * 0.055}px)`}} src={Forest2Svg} alt="Segunda floresta" />
+            <ForestThree style={{ transform: `translateY(-${offsetY * 0.1}px)`}} src={Forest3Svg} alt="Terceira floresta" />
             {opacity && 
               <TitleContainer>
               <Title style={{ transform: `translateY(${offsetY * 0.31}px)  translateX(${offsetY * 0.31}px)   scale(${( 1 + (offsetY * 0.001))})`}}>Natan Reis Chmura</Title>

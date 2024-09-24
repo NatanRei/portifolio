@@ -7,6 +7,11 @@ import { Laptop } from "./components/laptop";
 import { List } from "./components/list";
 import { ProjectsContainer, RowAlignContainer, RowAlignReverseContainer } from "./Projects.styles";
 import { useEffect, useRef, useState } from "react";
+import QuoteGeneratorWebp from '@/assets/projectQuoteGenerator.webp'
+import projectBlogBgOneWebp from '@/assets/projectBlogBgOne.webp'
+import projectBlogBgTwoWebp from '@/assets/projectBlogBgTwo.webp'
+import projectOneBgWebp from '@/assets/projectOneBg.webp'
+
 
 export function Projects() {
 
@@ -58,7 +63,7 @@ export function Projects() {
                     <>Esse é um card simples, pode ser feito somente com HTML5 e CSS3, clique nele para ver o código.</>
                 </Paragraph>
                 <Card3D 
-                    backgroundLink="https://ntnconsultoria.com.br/webAcess/img/portifolio/projectOneBg.webp"
+                    backgroundLink={projectOneBgWebp}
                     link="https://github.com/NatanRei/card3d-html-css"
                     />
             </RowAlignContainer>
@@ -76,8 +81,8 @@ export function Projects() {
                 </Paragraph>
                 <a href="https://blog-front-ratlh71ca-natanrei.vercel.app/" target="_blank">
                     <Rotate 
-                        backgroundImgFront="https://ntnconsultoria.com.br/webAcess/img/portifolio/projectBlogBgOne.webp"
-                        backgroundImgBack="https://ntnconsultoria.com.br/webAcess/img/portifolio/projectBlogBgTwo.webp"
+                        backgroundImgFront={projectBlogBgOneWebp}
+                        backgroundImgBack={projectBlogBgTwoWebp}
                     />
                     </a>
             </RowAlignContainer>
@@ -95,7 +100,7 @@ export function Projects() {
                 </Paragraph>
                 <HoverZoom 
                     projectLink="https://codepen.io/natanrei/full/LYjvQmB" 
-                    projectImage="https://ntnconsultoria.com.br/webAcess/img/portifolio/projectQuoteGenerator.webp" 
+                    projectImage={QuoteGeneratorWebp}
                 />
             </RowAlignContainer>
 
