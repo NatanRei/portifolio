@@ -54,7 +54,7 @@ export const Moon = styled("div", {
     backgroundRepeat: "no-repeat",
     width: 610,
     height:610,
-    backgroundImage: 'url(/public/images/moon.svg)',
+    backgroundImage: 'url(/images/moon.svg)',
     "@lg": {
         width: 400,
         height: 400,
@@ -77,7 +77,7 @@ export const Stars = styled("div", {
     backgroundRepeat: "no-repeat",
     width: "100%",
     height:"70vh",
-    backgroundImage: 'url(/public/images/stars.svg)',
+    backgroundImage: 'url(/images/stars.svg)',
 });
    
 export const Forest = styled('img', {
