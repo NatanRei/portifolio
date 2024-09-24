@@ -5,7 +5,7 @@ export const HoverLinkContainer = styled("div", {
     height: 240,
     position: "relative",
     margin: "0 1rem",
-    background: "url(/public/images/shop.webp) center",
+    background: `url(/images/shop.webp) center`,
     backgroundSize: "cover",
     color: "#fff",
     boxShadow: "#000 0px 11px 15px 0px",
