@@ -1,6 +1,6 @@
 import { ArrowSquareOut } from "phosphor-react";
 import { HoverLinkContainer } from "./hoverLink.styles";
-
+import Shop from "@/assets/shop.webp";
 export function HoverLink() {
     return (
     <HoverLinkContainer>
