@@ -53,7 +53,7 @@ export function TextLoop() {
 
   const padding = width / items.length;
   return (
-    <div className="text-lg mb-[1%] z-10">
+    <div className="text-lg mb-[2%] z-10">
       <Marquee
         gradient={false}
         pauseOnHover

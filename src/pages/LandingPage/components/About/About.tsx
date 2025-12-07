@@ -14,7 +14,7 @@ export function About() {
     });
 
     return (
-        <AboutContainer>
+        <AboutContainer className='bg-background'>
             <h2>Olá,</h2>
             <BoxContainer>
             <Paragraph>
