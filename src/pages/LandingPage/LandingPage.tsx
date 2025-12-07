@@ -1,7 +1,7 @@
 import { Screen } from "../../components/Screen";
 import { About } from "./components/About/About";
 import Academic from "./components/Academic";
-import { Contact } from "./components/Contact/Contact";
+import { Contact } from "./components/Contact";
 import { Initial } from "./components/Initial/Initial";
 import { Projects } from "./components/Projects/Projects";
 

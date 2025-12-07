@@ -4,7 +4,7 @@ import { LandingPage } from "./LandingPage/LandingPage";
 
 export function Home() {
   return (
-    <main className="dark max-w-screen overflow-x-hidden">
+    <main className="dark max-w-screen overflow-x-hidden text-primary">
       <Header />
       <LandingPage />
       <Footer />

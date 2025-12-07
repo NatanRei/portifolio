@@ -23,7 +23,7 @@ export function Contact() {
   }, []);
   return (
     <div
-      className="bg-neutral-800 w-full flex flex-col justify-center items-center"
+      className="bg-neutral-100 dark:bg-neutral-800 w-full flex flex-col justify-center items-center"
       ref={elementRef}
     >
       <h2 className="text-3xl mx-8">Vamos conversar!</h2>
@@ -64,7 +64,7 @@ function Icon({ children, translate, href }: IconProps) {
       style={{
         transform: translate,
       }}
-      className="mx-0 my-4 sm:my-12 text-white"
+      className="mx-0 my-4 sm:my-12"
     >
       {children}
     </a>
