@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { cn } from "../lib/utils";
+import { ThemeSwitch } from "./ui/theme-switch";
 
 export const Header = () => {
   const [opacity, setOpacity] = useState(0.5);
@@ -31,6 +32,7 @@ export const Header = () => {
         <HeaderIcon href="#about">Natan Quem?</HeaderIcon>
         <HeaderIcon href="#projects">Projetos</HeaderIcon>
         <HeaderIcon href="#contact">Contate-me</HeaderIcon>
+        <ThemeSwitch />
       </div>
     </header>
   );
