@@ -1,8 +1,8 @@
 import { formatDistanceToNow } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
-import { Paragraph } from "../../../Home.styles";
 import { AboutContainer, BoxContainer, BoxTitleContainer } from "./About.styles";
 import { Counter } from "./components/Counter";
+import { Paragraph } from '@/pages/Home.styles';
 
 export function About() {
     const initOfNatanProgramingCarrer = new Date("2020-09-01");
@@ -14,7 +14,7 @@ export function About() {
     });
 
     return (
-        <AboutContainer className='bg-background'>
+        <AboutContainer>
             <h2>Olá,</h2>
             <BoxContainer>
             <Paragraph>

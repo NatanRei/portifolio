@@ -1,4 +1,3 @@
-import { Paragraph } from "../../../Home.styles";
 import { Rotate } from "./components/rotate";
 import { Card3D } from "./components/card3d";
 import { HoverLink } from "./components/hoverLink";
@@ -11,6 +10,7 @@ import QuoteGeneratorWebp from '@/assets/projectQuoteGenerator.webp'
 import projectBlogBgOneWebp from '@/assets/projectBlogBgOne.webp'
 import projectBlogBgTwoWebp from '@/assets/projectBlogBgTwo.webp'
 import projectOneBgWebp from '@/assets/projectOneBg.webp'
+import { Paragraph } from "@/pages/Home.styles";
 
 
 export function Projects() {

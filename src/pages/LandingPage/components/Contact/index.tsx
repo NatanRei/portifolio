@@ -42,7 +42,7 @@ export function Contact() {
         </Icon>
         <Icon
           translate={`translateX(${translate}vw)`}
-          href="mailto:nreischmura@gmail.com?subject=Proposta irrecusável de $15k"
+          href="mailto:nreischmura@gmail.com?subject=Olá, venho pelo seu portifólio..."
         >
           <EnvelopeSimple size={54} />
         </Icon>
