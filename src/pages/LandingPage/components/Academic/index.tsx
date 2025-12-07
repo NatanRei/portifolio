@@ -1,41 +1,40 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
+const education = [
+  {
+    institution: "FIAP",
+    title: "Postgraduate Degree, Offensive Cyber Security",
+    period: "Mar 2024 - Fev 2025",
+  },
+  {
+    institution: "Universidade Anhembi Morumbi",
+    title: "Análise e Desenvolvimento de Sistemas",
+    period: "Jun 2021 - Dez 2023",
+  },
+  {
+    institution: "SENAI",
+    title: "Técnico em Mecatrônica",
+    period: "2018 - 2019",
+  },
+];
+
+const certifications = [
+  {
+    org: "Amazon Web Services (AWS)",
+    title: "AWS Certified Solutions Architect - Associate",
+    date: "Emitido em Set 2025 · Expira em Set 2028",
+  },
+  {
+    org: "Amazon Web Services (AWS)",
+    title: "AWS Certified Cloud Practitioner",
+    date: "Emitido em Out 2023 · Expira em Set 2028",
+  },
+];
+
 export default function Academic() {
-  const education = [
-    {
-      institution: "FIAP",
-      title:
-        "Postgraduate Degree, Offensive Cyber Security",
-      period: "Mar 2024 - Fev 2025",
-    },
-    {
-      institution: "Universidade Anhembi Morumbi",
-      title: "Análise e Desenvolvimento de Sistemas",
-      period: "Jun 2021 - Dez 2023",
-    },
-    {
-      institution: "SENAI",
-      title: "Técnico em Mecatrônica",
-      period: "2018 - 2019",
-    },
-  ];
-
-  const certifications = [
-    {
-      org: "Amazon Web Services (AWS)",
-      title: "AWS Certified Solutions Architect - Associate",
-      date: "Emitido em Set 2025 · Expira em Set 2028",
-    },
-    {
-      org: "Amazon Web Services (AWS)",
-      title: "AWS Certified Cloud Practitioner",
-      date: "Emitido em Out 2023 · Expira em Set 2028",
-    },
-  ];
-
   return (
-    <section className="w-full py-20" id="academic-career">
+    <section className="bg-background dark:bg-background w-full py-20" id="academic-career">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
