@@ -1,10 +1,5 @@
 import { styled } from "../styles";
 
-export const HomeContainer = styled("main", {
-    maxWidth: "100vw",
-    overflowX: "hidden",
-});
-
 export const Paragraph = styled("p", {
     backgroundColor: "rgb(10,12,12)",
     padding: "2rem",
