@@ -1,0 +1,12 @@
+{
+    "header": {
+        "ntn": "NTN",
+        "who": "Natan who?",
+        "projects": "Projects",
+        "contact": "Contact me"
+    },
+    "home": {
+        "name": "Natan Reis Chmura",
+        "position": "Full Stack Developer"
+    }
+}

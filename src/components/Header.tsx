@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { cn } from "../lib/utils";
 import { ThemeSwitch } from "./ui/theme-switch";
 
 export const Header = () => {
+  const { t } = useTranslation();
+
   const [opacity, setOpacity] = useState(0.5);
   const handleScroll = () => {
     if (window.pageYOffset > 10) {
@@ -25,14 +28,15 @@ export const Header = () => {
       }}
     >
       <div className="z-200 opacity-100 flex items-center">
-        <HeaderIcon href="#home">NTN</HeaderIcon>
+        <HeaderIcon href="#home">{t("header.ntn")}</HeaderIcon>
       </div>
 
       <div className="z-200 opacity-100 flex items-center gap-4">
-        <HeaderIcon href="#about">Natan Quem?</HeaderIcon>
-        <HeaderIcon href="#projects">Projetos</HeaderIcon>
-        <HeaderIcon href="#contact">Contate-me</HeaderIcon>
+        <HeaderIcon href="#about">{t("header.who")}</HeaderIcon>
+        <HeaderIcon href="#projects">{t("header.projects")}</HeaderIcon>
+        <HeaderIcon href="#contact">{t("header.contact")}</HeaderIcon>
         <ThemeSwitch />
+        {/*<LanguageSwitch />*/}
       </div>
     </header>
   );
