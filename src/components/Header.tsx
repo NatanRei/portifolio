@@ -18,7 +18,7 @@ export const Header = () => {
   }, []);
   return (
     <header
-      className="fixed top-0 left-0 z-200 w-screen h-14 flex items-center justify-between duration-700 bg-neutral-800 px-4 md:px-12"
+      className="fixed top-0 left-0 z-200 w-screen h-14 flex items-center justify-between duration-700 bg-neutral-100 dark:bg-neutral-800 px-4 md:px-12"
       style={{
         opacity: opacity,
       }}
@@ -41,7 +41,7 @@ const HeaderIcon = ({ className, ...props }: React.ComponentProps<"a">) => {
     <a
       {...props}
       className={cn(
-        "text-gray-300 no-underline cursor-pointer hover:text-white hover:border-b px-2",
+        "text-gray-800 dark:text-gray-300 font-medium no-underline cursor-pointer hover:text-black dark:hover:text-white hover:border-b px-2",
         className
       )}
     />

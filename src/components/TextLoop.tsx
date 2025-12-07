@@ -58,7 +58,7 @@ export function TextLoop() {
         gradient={false}
         pauseOnHover
         speed={50}
-        className="marquee text-lg"
+        className="marquee text-xl"
         direction="left"
       >
         {items.map((item) => (
@@ -66,7 +66,7 @@ export function TextLoop() {
             target="_blank"
             href={`https://www.google.com/search?q=${item}`}
             style={{ paddingLeft: padding }}
-            className="item text-neutral-400 dark:text-neutral-400"
+            className="item text-neutral-600 dark:text-neutral-400 font-medium"
             key={item}
           >
             {item}

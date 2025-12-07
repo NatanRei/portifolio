@@ -8,7 +8,7 @@ export const TitleContainer = styled("div", {
 
 export const Title = styled("h1", {
   fontFamily: "Anek Devanagari",
-  fontWeight: 400,
+  fontWeight: 600,
   lineHeight: 1,
   fontSize: "$5xl",
 });
