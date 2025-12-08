@@ -1,0 +1,109 @@
+{
+    "currentLanguage": "en",
+    "header": {
+        "ntn": "NTN",
+        "who": "Natan who?",
+        "projects": "Projects",
+        "contact": "Contact me"
+    },
+    "home": {
+        "name": "Natan Reis Chmura",
+        "position": "Full Stack Developer",
+        "stack": [
+            "React.js",
+            "Redux",
+            "Next.js",
+            "Node.js",
+            "Express",
+            "Fastify",
+            "GraphQL",
+            "JWT",
+            "Laravel",
+            "PHP",
+            "MongoDB",
+            "MySQL",
+            "PostgreSQL",
+            "Docker",
+            "AWS",
+            "Python",
+            "Selenium",
+            "CyberSecurity",
+            "Figma",
+            "S.O.L.I.D.",
+            "Agile",
+            "Unit Tests",
+            "E2E Tests"
+        ]
+    },
+    "about": {
+        "hello": "Hello",
+        "pt1": "I am a software and web applications developer. I've been connected to the tech world for a long time, but I started working with Web development around September or October of 2020",
+        "pt2": "Since then, I've always pursued constant growth in all areas related to programming and technology (all of them?), keeping myself aligned with the market.",
+        "pt3": "I currently work as a full-stack developer, and my main tools are: ReactJS, Laravel, NodeJS...",
+        "years": "years",
+        "months": "months",
+        "days": "days",
+        "projects": "Here are some cool projects I've built:"
+    },
+    "projects": {
+        "card": "This is a simple card, built only with HTML5 and CSS3, click it to see the code",
+        "laptop": "A laptop featuring the classic Kali Linux cover. Studying Cyber Security is one of my hobbies",
+        "techNow": "Tech Now, a blog built with Next.js on the frontend and Strapi as the headless CMS",
+        "drumKit": "A drum kit, just click and create your own music",
+        "phases": "Random phrase generator",
+        "eCommerce": "An e-commerce integrated with the Stripe API",
+        "api": "A complete API, GymPass-style",
+        "apiList": [
+            "S.O.L.I.D.",
+            "Unit Tests",
+            "E2E Tests",
+            "Docker",
+            "GitHub Actions",
+            "JWT",
+            "TypeScript",
+            "Prisma",
+            "Fastify",
+            "PostgreSQL"
+        ],
+        "apiAccess": "Access now"
+    },
+    "academic": {
+        "title": "Academic Career",
+        "eduction": "Education",
+        "educationList": [
+            {
+                "institution": "FIAP",
+                "title": "Postgraduate Degree in Offensive Cyber Security",
+                "period": "Mar 2024 - Feb 2025"
+            },
+            {
+                "institution": "Universidade Anhembi Morumbi",
+                "title": "Systems Analysis and Development",
+                "period": "Jun 2021 - Dec 2023"
+            },
+            {
+                "institution": "SENAI",
+                "title": "Mechatronics Technician",
+                "period": "2018 - 2019"
+            }
+        ],
+        "certifications": "Certifications",
+        "certificationsList": [
+            {
+                "org": "Amazon Web Services (AWS)",
+                "title": "AWS Certified Solutions Architect - Associate",
+                "date": "Issued Sep 2025 · Expires Sep 2028"
+            },
+            {
+                "org": "Amazon Web Services (AWS)",
+                "title": "AWS Certified Cloud Practitioner",
+                "date": "Issued Oct 2023 · Expires Sep 2028"
+            }
+        ]
+    },
+    "contact": "Let's talk!",
+    "footer": {
+        "pt1": "Developed with",
+        "pt2": "by NTN"
+    }
+}

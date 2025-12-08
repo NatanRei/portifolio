@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
+import { useTranslation } from "react-i18next";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -10,6 +11,8 @@ function getWindowDimensions() {
 }
 
 export function TextLoop() {
+  const { t } = useTranslation();
+
   const [windowDimensions, setWindowDimensions] = useState(
     getWindowDimensions()
   );
@@ -23,31 +26,9 @@ export function TextLoop() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const items: string[] = [
-    "React.js",
-    "Redux",
-    "Next.js",
-    "Node.js",
-    "Express",
-    "Fastify",
-    "GraphQL",
-    "JWT",
-    "Laravel",
-    "PHP",
-    "MongoDB",
-    "MySQL",
-    "Firebase",
-    "Docker",
-    "AWS EC2",
-    "Python",
-    "Selenium",
-    "CyberSecurity",
-    "Figma",
-    "S.O.L.I.D.",
-    "Agile",
-    "Unit Tests",
-    "E2E Tests",
-  ];
+  const items = t("home.stack", {
+    returnObjects: true,
+  }) as string[];
 
   const { width } = windowDimensions;
 

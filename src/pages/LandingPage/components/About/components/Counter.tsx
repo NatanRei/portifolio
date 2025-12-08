@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { diffBetweenDates } from "../../../../../services/date"
 import { CounterContainer, Separator } from "./Counter.styles"
 
@@ -6,7 +7,8 @@ interface CounterProps {
 }
 
 export function Counter({initialDate}: CounterProps) {
-
+  const { t } = useTranslation();
+  
 const diffDate = diffBetweenDates(initialDate, new Date())
 const years = String(diffDate["years"]).padStart(2, '0')
   const months = String(diffDate["months"]).padStart(2, '0')
@@ -16,27 +18,27 @@ const years = String(diffDate["years"]).padStart(2, '0')
     <CounterContainer className="text-primary">
       <div>
         <div>
-        <span>{years[0]}</span>
-        <span>{years[1]}</span>
+          <span>{years[0]}</span>
+          <span>{years[1]}</span>
         </div>
-        <i>anos</i>
+        <i>{t("about.years")}</i>
       </div>
       <Separator>:</Separator>
       <div>
-      <div>
-        <span>{months[0]}</span>
-        <span>{months[1]}</span>
+        <div>
+          <span>{months[0]}</span>
+          <span>{months[1]}</span>
         </div>
-        <i>meses</i>
+        <i>{t("about.months")}</i>
       </div>
       <Separator>:</Separator>
       <div>
-      <div>
-        <span>{days[0]}</span>
-        <span>{days[1]}</span>
+        <div>
+          <span>{days[0]}</span>
+          <span>{days[1]}</span>
         </div>
-        <i>dias</i>
+        <i>{t("about.days")}</i>
       </div>
     </CounterContainer>
-  )
+  );
 }
