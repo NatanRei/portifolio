@@ -1,40 +1,40 @@
 import { formatDistanceToNow } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
+import en from "date-fns/locale/en-US";
 import { AboutContainer, BoxContainer, BoxTitleContainer } from "./About.styles";
 import { Counter } from "./components/Counter";
 import { Paragraph } from '@/pages/Home.styles';
+import { useTranslation } from 'react-i18next';
 
 export function About() {
+    const { t } = useTranslation();
+
     const initOfNatanProgramingCarrer = new Date("2020-09-01");
 
-    
-    const publishedDateRelativeToNow = formatDistanceToNow(initOfNatanProgramingCarrer, {
-        locale: ptBR,
+    const currentLanguage = t("currentLanguage");
+
+    const publishedDateRelativeToNow = formatDistanceToNow(
+      initOfNatanProgramingCarrer,
+      {
+        locale: currentLanguage === 'pt-br' ? ptBR : en,
         addSuffix: true,
-    });
+      }
+    );
 
     return (
-        <AboutContainer>
-            <h2>Olá,</h2>
-            <BoxContainer>
-            <Paragraph>
-                Sou desenvolvedor de softwares, aplicações web e afins.
-                Desde muito tempo, venho mantendo contato com o universo da tecnologia,
-                mas iniciei os trabalhos com programação Web em meados de setembro ou outubro de 2020, {publishedDateRelativeToNow}.
-            </Paragraph>
-            <Counter initialDate={initOfNatanProgramingCarrer} />
-            </BoxContainer>
-            <BoxContainer>
-            <Paragraph>
-                Desde lá, sempre busco evolução constante nas áreas que a programação e tecnologia abrangem (todas?), mantendo-me alinhado com o mercado.
-            </Paragraph>
-            <Paragraph>
-                Atualmente, trabalho como desenvolvedor fullStack, minhas principais ferramentas são: ReactJs, Laravel, NodeJs... 
-            </Paragraph>
-            </BoxContainer>
-            <BoxTitleContainer>
-                Veja alguns projetinhos bacanas que fiz:
-            </BoxTitleContainer>
-        </AboutContainer>
+      <AboutContainer>
+        <h2>{t("about.hello")},</h2>
+        <BoxContainer>
+          <Paragraph>
+            {t("about.pt1")}, {publishedDateRelativeToNow}.
+          </Paragraph>
+          <Counter initialDate={initOfNatanProgramingCarrer} />
+        </BoxContainer>
+        <BoxContainer>
+          <Paragraph>{t("about.pt2")}</Paragraph>
+          <Paragraph>{t("about.pt3")}</Paragraph>
+        </BoxContainer>
+        <BoxTitleContainer>{t("about.projects")}</BoxTitleContainer>
+      </AboutContainer>
     );
 }

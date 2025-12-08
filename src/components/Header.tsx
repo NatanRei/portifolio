@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { cn } from "../lib/utils";
 import { ThemeSwitch } from "./ui/theme-switch";
+import { LanguageSwitch } from "./ui/language-switcher";
 
 export const Header = () => {
   const { t } = useTranslation();
@@ -36,7 +37,7 @@ export const Header = () => {
         <HeaderIcon href="#projects">{t("header.projects")}</HeaderIcon>
         <HeaderIcon href="#contact">{t("header.contact")}</HeaderIcon>
         <ThemeSwitch />
-        {/*<LanguageSwitch />*/}
+        <LanguageSwitch />
       </div>
     </header>
   );

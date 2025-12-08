@@ -1,7 +1,10 @@
 import { EnvelopeSimple, GithubLogo, LinkedinLogo } from "phosphor-react";
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 
 export function Contact() {
+  const { t } = useTranslation();
+
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => {
     setOffsetY(window.pageYOffset);
@@ -26,7 +29,7 @@ export function Contact() {
       className="bg-neutral-100 dark:bg-neutral-800 w-full flex flex-col justify-center items-center"
       ref={elementRef}
     >
-      <h2 className="text-3xl mx-8">Vamos conversar!</h2>
+      <h2 className="text-3xl mx-8">{t("contact")}</h2>
       <div className="flex flex-row gap-10">
         <Icon
           translate={`translateX(-${translate}vw)`}

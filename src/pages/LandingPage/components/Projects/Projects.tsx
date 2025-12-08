@@ -11,9 +11,11 @@ import projectBlogBgOneWebp from '@/assets/projectBlogBgOne.webp'
 import projectBlogBgTwoWebp from '@/assets/projectBlogBgTwo.webp'
 import projectOneBgWebp from '@/assets/projectOneBg.webp'
 import { Paragraph } from "@/pages/Home.styles";
+import { useTranslation } from "react-i18next";
 
 
 export function Projects() {
+    const { t } = useTranslation();
 
     const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => {
@@ -56,68 +58,88 @@ export function Projects() {
     }, []);
 
     return (
-        <ProjectsContainer>
+      <ProjectsContainer>
+        <RowAlignContainer className="row-align" ref={elementRefCard3D}>
+          <Paragraph style={{ opacity: `${translateCard3D}` }}>
+            {t("projects.card")}
+          </Paragraph>
+          <Card3D
+            backgroundLink={projectOneBgWebp}
+            link="https://github.com/NatanRei/card3d-html-css"
+          />
+        </RowAlignContainer>
 
-            <RowAlignContainer className="row-align"  ref={elementRefCard3D}>
-                <Paragraph style={{ opacity: `${translateCard3D}` }}>
-                    <>Esse é um card simples, pode ser feito somente com HTML5 e CSS3, clique nele para ver o código.</>
-                </Paragraph>
-                <Card3D 
-                    backgroundLink={projectOneBgWebp}
-                    link="https://github.com/NatanRei/card3d-html-css"
-                    />
-            </RowAlignContainer>
+        <RowAlignReverseContainer className="row-align" ref={elementRefLapTop}>
+          <Laptop />
+          <Paragraph style={{ opacity: `${translateLapTop}` }}>
+            {t("projects.laptop")}
+          </Paragraph>
+        </RowAlignReverseContainer>
 
-            <RowAlignReverseContainer className="row-align" ref={elementRefLapTop}>
-                <Laptop />
-                <Paragraph style={{ opacity: `${translateLapTop}` }}>
-                    <>Laptop com a clássica capa do Kali Linux. O estudo de Cyber Segurança é um de meus Hobbies.</>
-                </Paragraph>
-            </RowAlignReverseContainer>
+        <RowAlignContainer className="row-align" ref={elementRefBlog}>
+          <Paragraph style={{ opacity: `${translateBlog}` }}>
+            {t("projects.techNow")}
+          </Paragraph>
+          <a
+            href="https://blog-front-ratlh71ca-natanrei.vercel.app/"
+            target="_blank"
+          >
+            <Rotate
+              backgroundImgFront={projectBlogBgOneWebp}
+              backgroundImgBack={projectBlogBgTwoWebp}
+            />
+          </a>
+        </RowAlignContainer>
 
-            <RowAlignContainer className="row-align" ref={elementRefBlog}>
-                <Paragraph style={{ opacity: `${translateBlog}` }}>
-                    <>Tech Now, um Blog feito utilizando Next.js no front, e Strapi como headless CMS</>
-                </Paragraph>
-                <a href="https://blog-front-ratlh71ca-natanrei.vercel.app/" target="_blank">
-                    <Rotate 
-                        backgroundImgFront={projectBlogBgOneWebp}
-                        backgroundImgBack={projectBlogBgTwoWebp}
-                    />
-                    </a>
-            </RowAlignContainer>
+        <RowAlignReverseContainer className="row-align" ref={elementRefDrum}>
+          <iframe
+            title="Bateria"
+            width="235"
+            height="290"
+            src="https://production--kaleidoscopic-liger-5074ba.netlify.app/"
+          />
+          <Paragraph style={{ opacity: `${translateDrum}` }}>
+            <a
+              href="https://production--kaleidoscopic-liger-5074ba.netlify.app"
+              target="_blank"
+            >
+              {t("projects.drumKit")}
+            </a>
+          </Paragraph>
+        </RowAlignReverseContainer>
 
-            <RowAlignReverseContainer className="row-align" ref={elementRefDrum}>
-                <iframe title="Bateria" width="235" height="290" src="https://production--kaleidoscopic-liger-5074ba.netlify.app/" />
-                <Paragraph style={{ opacity: `${translateDrum}` }}>
-                        <a href="https://production--kaleidoscopic-liger-5074ba.netlify.app" target="_blank">Uma bateria, só clicar e fazer a sua música</a>
-                </Paragraph>
-            </RowAlignReverseContainer>  
+        <RowAlignContainer className="row-align" ref={elementRefQuotes}>
+          <Paragraph style={{ opacity: `${translateQuotes}` }}>
+            <a href="https://codepen.io/natanrei/full/LYjvQmB" target="_blank">
+              {t("projects.phases")}
+            </a>
+          </Paragraph>
+          <HoverZoom
+            projectLink="https://codepen.io/natanrei/full/LYjvQmB"
+            projectImage={QuoteGeneratorWebp}
+          />
+        </RowAlignContainer>
 
-            <RowAlignContainer className="row-align" ref={elementRefQuotes}>
-                <Paragraph style={{ opacity: `${translateQuotes}` }}>
-                        <a href="https://codepen.io/natanrei/full/LYjvQmB" target="_blank">Gerador de frases aleatórias</a>
-                </Paragraph>
-                <HoverZoom 
-                    projectLink="https://codepen.io/natanrei/full/LYjvQmB" 
-                    projectImage={QuoteGeneratorWebp}
-                />
-            </RowAlignContainer>
+        <RowAlignReverseContainer className="row-align" ref={elementRefEcom}>
+          <HoverLink />
+          <Paragraph style={{ opacity: `${translateEcom}` }}>
+            <a
+              href="https://production--curious-sunflower-f79e30.netlify.app/"
+              target="_blank"
+            >
+              {t("projects.eCommerce")}
+            </a>
+          </Paragraph>
+        </RowAlignReverseContainer>
 
-            <RowAlignReverseContainer className="row-align" ref={elementRefEcom}>
-                <HoverLink />
-                <Paragraph style={{ opacity: `${translateEcom}` }}>
-                        <a href="https://production--curious-sunflower-f79e30.netlify.app/" target="_blank">Um E-commerce, integrado com Stripe API</a>
-                </Paragraph>
-            </RowAlignReverseContainer>
-
-            <RowAlignContainer className="row-align" ref={elementRefApiGym}>
-                <Paragraph style={{ opacity: `${translateApiGym}` }}>
-                        <a href="https://github.com/NatanRei/ntn-api-solid" target="_blank">API Completa, estilo GymPass</a>
-                </Paragraph>
-                <List />
-            </RowAlignContainer>
-            
-        </ProjectsContainer>
+        <RowAlignContainer className="row-align" ref={elementRefApiGym}>
+          <Paragraph style={{ opacity: `${translateApiGym}` }}>
+            <a href="https://github.com/NatanRei/ntn-api-solid" target="_blank">
+              {t("projects.api")}
+            </a>
+          </Paragraph>
+          <List />
+        </RowAlignContainer>
+      </ProjectsContainer>
     );
 }

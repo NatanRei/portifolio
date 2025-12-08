@@ -1,40 +1,33 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
-const education = [
-  {
-    institution: "FIAP",
-    title: "Postgraduate Degree, Offensive Cyber Security",
-    period: "Mar 2024 - Fev 2025",
-  },
-  {
-    institution: "Universidade Anhembi Morumbi",
-    title: "Análise e Desenvolvimento de Sistemas",
-    period: "Jun 2021 - Dez 2023",
-  },
-  {
-    institution: "SENAI",
-    title: "Técnico em Mecatrônica",
-    period: "2018 - 2019",
-  },
-];
+type EducationType = {
+  institution: string;
+  title: string;
+  period: string;
+};
 
-const certifications = [
-  {
-    org: "Amazon Web Services (AWS)",
-    title: "AWS Certified Solutions Architect - Associate",
-    date: "Emitido em Set 2025 · Expira em Set 2028",
-  },
-  {
-    org: "Amazon Web Services (AWS)",
-    title: "AWS Certified Cloud Practitioner",
-    date: "Emitido em Out 2023 · Expira em Set 2028",
-  },
-];
+type CertificationType = {
+  org: string;
+  title: string;
+  date: string;
+};
 
 export default function Academic() {
+  const { t } = useTranslation();
+  const education = t("academic.educationList", {
+    returnObjects: true,
+  }) as EducationType[];
+  const certifications = t("academic.certificationsList", {
+    returnObjects: true,
+  }) as CertificationType[];
+
   return (
-    <section className="bg-background dark:bg-background w-full py-20" id="academic-career">
+    <section
+      className="bg-background dark:bg-background w-full py-20"
+      id="academic-career"
+    >
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -42,12 +35,14 @@ export default function Academic() {
           transition={{ duration: 0.4 }}
           className="text-3xl font-bold mb-10"
         >
-          Carreira Acadêmica
+          {t("academic.title")}
         </motion.h2>
 
         <div className="space-y-12">
           <div>
-            <h3 className="text-2xl font-semibold mb-6">Formação</h3>
+            <h3 className="text-2xl font-semibold mb-6">
+              {t("academic.eduction")}
+            </h3>
             <div className="grid md:grid-cols-2 gap-6">
               {education.map((item, index) => (
                 <motion.div
@@ -70,7 +65,9 @@ export default function Academic() {
             </div>
           </div>
           <div>
-            <h3 className="text-2xl font-semibold mb-6">Certificações</h3>
+            <h3 className="text-2xl font-semibold mb-6">
+              {t("academic.certifications")}
+            </h3>
             <div className="grid md:grid-cols-2 gap-6">
               {certifications.map((cert, index) => (
                 <motion.div

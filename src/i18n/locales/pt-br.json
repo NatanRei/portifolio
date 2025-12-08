@@ -1,4 +1,5 @@
 {
+    "currentLanguage": "pt-br",
     "header": {
         "ntn": "NTN",
         "who": "Natan quem?",
@@ -7,6 +8,102 @@
     },
     "home": {
         "name": "Natan Reis Chmura",
-        "position": "Full Stack Developer"
+        "position": "Full Stack Developer",
+        "stack": [
+            "React.js",
+            "Redux",
+            "Next.js",
+            "Node.js",
+            "Express",
+            "Fastify",
+            "GraphQL",
+            "JWT",
+            "Laravel",
+            "PHP",
+            "MongoDB",
+            "MySQL",
+            "PostgreSQL",
+            "Docker",
+            "AWS",
+            "Python",
+            "Selenium",
+            "CyberSegurança",
+            "Figma",
+            "S.O.L.I.D.",
+            "Metodologias Ágeis",
+            "Testes Unitários",
+            "Testes E2E"
+        ]
+    },
+    "about": {
+        "hello": "Olá",
+        "pt1": "Sou desenvolvedor de softwares, aplicações web e afins. Desde muito tempo, venho mantendo contato com o universo da tecnologia, mas iniciei os trabalhos com programação Web em meados de setembro ou outubro de 2020",
+        "pt2": "Desde lá, sempre busco evolução constante nas áreas que a programação e tecnologia abrangem (todas?), mantendo-me alinhado com o mercado.",
+        "pt3": "Atualmente, trabalho como desenvolvedor fullStack, minhas principais ferramentas são: ReactJs, Laravel, NodeJs...",
+        "years": "anos",
+        "months": "meses",
+        "days": "dias",
+        "projects": "Veja alguns projetinhos bacanas que fiz:"
+    },
+    "projects": {
+        "card": "Esse é um card simples, pode ser feito somente com HTML5 e CSS3, clique nele para ver o código",
+        "laptop": "Laptop com a clássica capa do Kali Linux. O estudo de Cyber Segurança é um de meus Hobbies",
+        "techNow": "Tech Now, um Blog feito utilizando Next.js no front, e Strapi como headless CMS",
+        "drumKit": "Uma bateria, só clicar e fazer a sua música",
+        "phases": "Gerador de frases aleatórias",
+        "eCommerce": "Um E-commerce, integrado com Stripe API",
+        "api": "API Completa, estilo GymPass",
+        "apiList": [
+            "S.O.L.I.D.",
+            "Testes Unitários",
+            "Testes E2E",
+            "Docker",
+            "GitHub Actions",
+            "JWT",
+            "TypeScript",
+            "Prisma",
+            "Fastify",
+            "PostgreSQL"
+        ],
+        "apiAccess": "Acesse agora"
+    },
+    "academic": {
+        "title": "Carreira Acadêmica",
+        "eduction": "Formação",
+        "educationList": [
+            {
+                "institution": "FIAP",
+                "title": "Pós-graduação em Cyber Segurança Ofensiva",
+                "period": "Mar 2024 - Fev 2025"
+            },
+            {
+                "institution": "Universidade Anhembi Morumbi",
+                "title": "Análise e Desenvolvimento de Sistemas",
+                "period": "Jun 2021 - Dez 2023"
+            },
+            {
+                "institution": "SENAI",
+                "title": "Técnico em Mecatrônica",
+                "period": "2018 - 2019"
+            }
+        ],
+        "certifications": "Certificações",
+        "certificationsList": [
+            {
+                "org": "Amazon Web Services (AWS)",
+                "title": "AWS Certified Solutions Architect - Associate",
+                "date": "Emitido em Set 2025 · Expira em Set 2028"
+            },
+            {
+                "org": "Amazon Web Services (AWS)",
+                "title": "AWS Certified Cloud Practitioner",
+                "date": "Emitido em Out 2023 · Expira em Set 2028"
+            }
+        ]
+    },
+    "contact": "Vamos conversar!",
+    "footer": {
+        "pt1": "Desenvolvido com",
+        "pt2": "por NTN"
     }
 }
