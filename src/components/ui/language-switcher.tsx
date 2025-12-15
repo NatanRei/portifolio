@@ -11,6 +11,7 @@ export function LanguageSwitch() {
   return (
     <button
       onClick={toggleLang}
+      aria-label="Troca de idioma"
       className="px-3 py-2 rounded bg-neutral-200 dark:bg-neutral-800 hover:bg-neutral-300 dark:hover:bg-neutral-900"
     >
       {i18n.language === "pt" ? "EN" : "PT"}
