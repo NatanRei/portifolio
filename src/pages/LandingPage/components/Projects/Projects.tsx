@@ -1,145 +1,147 @@
-import { Rotate } from "./components/rotate";
+import prayNowDark from "@/assets/prayNowDark.webp";
+import prayNowLight from "@/assets/prayNowLight.webp";
+import projectBlogBgOneWebp from "@/assets/projectBlogBgOne.webp";
+import projectBlogBgTwoWebp from "@/assets/projectBlogBgTwo.webp";
+import projectOneBgWebp from "@/assets/projectOneBg.webp";
+import { Paragraph } from "@/pages/Home.styles";
+import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Card3D } from "./components/card3d";
 import { HoverLink } from "./components/hoverLink";
-import HoverZoom from "./components/hoverZoom";
 import { Laptop } from "./components/laptop";
 import { List } from "./components/list";
-import { ProjectsContainer, RowAlignContainer, RowAlignReverseContainer } from "./Projects.styles";
-import { useEffect, useRef, useState } from "react";
-import QuoteGeneratorWebp from '@/assets/projectQuoteGenerator.webp'
-import projectBlogBgOneWebp from '@/assets/projectBlogBgOne.webp'
-import projectBlogBgTwoWebp from '@/assets/projectBlogBgTwo.webp'
-import projectOneBgWebp from '@/assets/projectOneBg.webp'
-import { Paragraph } from "@/pages/Home.styles";
-import { useTranslation } from "react-i18next";
-
+import { Rotate } from "./components/rotate";
+import {
+  ProjectsContainer,
+  RowAlignContainer,
+  RowAlignReverseContainer,
+} from "./Projects.styles";
 
 export function Projects() {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => {
-          setOffsetY(window.scrollY)
-    };
-    const elementRefCard3D = useRef(null);
-    let translateCard3D = getTranslate(elementRefCard3D);
-    const elementRefLapTop = useRef(null);
-    let translateLapTop = getTranslate(elementRefLapTop);
-    const elementRefBlog = useRef(null);
-    let translateBlog = getTranslate(elementRefBlog);
-    const elementRefDrum = useRef(null);
-    let translateDrum = getTranslate(elementRefDrum);
-    const elementRefQuotes = useRef(null);
-    let translateQuotes = getTranslate(elementRefQuotes);
-    const elementRefEcom = useRef(null);
-    let translateEcom = getTranslate(elementRefEcom);
-    const elementRefApiGym = useRef(null);
-    let translateApiGym = getTranslate(elementRefApiGym);
-    
-    function getTranslate(elementRef: React.MutableRefObject<null>) {
-        const element: any = elementRef.current
-        const SENSITIVITY = 350
-        let translate = 0
-            if(element) {
-                const whereElementStart = element.offsetTop
-                const whereElementEnd = element.offsetHeight
-                const initOfElement = whereElementStart - whereElementEnd - SENSITIVITY
-                const zero = (offsetY - initOfElement) < 0 ? 0 : (offsetY - initOfElement)
-                let percentage = (zero * 100) / whereElementEnd
-                percentage = percentage > 100 ? 100 : percentage < 0 ? 0 : percentage
-                translate = percentage / 100
-            }
-            return translate
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => {
+    setOffsetY(window.scrollY);
+  };
+  const elementRefCard3D = useRef(null);
+  let translateCard3D = getTranslate(elementRefCard3D);
+  const elementRefLapTop = useRef(null);
+  let translateLapTop = getTranslate(elementRefLapTop);
+  const elementRefBlog = useRef(null);
+  let translateBlog = getTranslate(elementRefBlog);
+  const elementRefDrum = useRef(null);
+  let translateDrum = getTranslate(elementRefDrum);
+  const elementRefQuotes = useRef(null);
+  let translateQuotes = getTranslate(elementRefQuotes);
+  const elementRefEcom = useRef(null);
+  let translateEcom = getTranslate(elementRefEcom);
+  const elementRefApiGym = useRef(null);
+  let translateApiGym = getTranslate(elementRefApiGym);
+
+  function getTranslate(elementRef: React.MutableRefObject<null>) {
+    const element: any = elementRef.current;
+    const SENSITIVITY = 350;
+    let translate = 0;
+    if (element) {
+      const whereElementStart = element.offsetTop;
+      const whereElementEnd = element.offsetHeight;
+      const initOfElement = whereElementStart - whereElementEnd - SENSITIVITY;
+      const zero = offsetY - initOfElement < 0 ? 0 : offsetY - initOfElement;
+      let percentage = (zero * 100) / whereElementEnd;
+      percentage = percentage > 100 ? 100 : percentage < 0 ? 0 : percentage;
+      translate = percentage / 100;
     }
+    return translate;
+  }
 
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-    return (
-      <ProjectsContainer>
-        <RowAlignContainer className="row-align" ref={elementRefCard3D}>
-          <Paragraph style={{ opacity: `${translateCard3D}` }}>
-            {t("projects.card")}
-          </Paragraph>
-          <Card3D
-            backgroundLink={projectOneBgWebp}
-            link="https://github.com/NatanRei/card3d-html-css"
+  return (
+    <ProjectsContainer>
+      <RowAlignContainer className="row-align" ref={elementRefCard3D}>
+        <Paragraph style={{ opacity: `${translateCard3D}` }}>
+          {t("projects.card")}
+        </Paragraph>
+        <Card3D
+          backgroundLink={projectOneBgWebp}
+          link="https://github.com/NatanRei/card3d-html-css"
+        />
+      </RowAlignContainer>
+
+      <RowAlignReverseContainer className="row-align" ref={elementRefLapTop}>
+        <Laptop />
+        <Paragraph style={{ opacity: `${translateLapTop}` }}>
+          {t("projects.laptop")}
+        </Paragraph>
+      </RowAlignReverseContainer>
+
+      <RowAlignContainer className="row-align" ref={elementRefBlog}>
+        <Paragraph style={{ opacity: `${translateBlog}` }}>
+          {t("projects.techNow")}
+        </Paragraph>
+        <a
+          href="https://blog-front-ratlh71ca-natanrei.vercel.app/"
+          target="_blank"
+        >
+          <Rotate
+            backgroundImgFront={projectBlogBgOneWebp}
+            backgroundImgBack={projectBlogBgTwoWebp}
           />
-        </RowAlignContainer>
+        </a>
+      </RowAlignContainer>
 
-        <RowAlignReverseContainer className="row-align" ref={elementRefLapTop}>
-          <Laptop />
-          <Paragraph style={{ opacity: `${translateLapTop}` }}>
-            {t("projects.laptop")}
-          </Paragraph>
-        </RowAlignReverseContainer>
-
-        <RowAlignContainer className="row-align" ref={elementRefBlog}>
-          <Paragraph style={{ opacity: `${translateBlog}` }}>
-            {t("projects.techNow")}
-          </Paragraph>
+      <RowAlignReverseContainer className="row-align" ref={elementRefDrum}>
+        <iframe
+          title="Bateria"
+          width="235"
+          height="290"
+          src="https://production--kaleidoscopic-liger-5074ba.netlify.app/"
+        />
+        <Paragraph style={{ opacity: `${translateDrum}` }}>
           <a
-            href="https://blog-front-ratlh71ca-natanrei.vercel.app/"
+            href="https://production--kaleidoscopic-liger-5074ba.netlify.app"
             target="_blank"
           >
-            <Rotate
-              backgroundImgFront={projectBlogBgOneWebp}
-              backgroundImgBack={projectBlogBgTwoWebp}
-            />
+            {t("projects.drumKit")}
           </a>
-        </RowAlignContainer>
-
-        <RowAlignReverseContainer className="row-align" ref={elementRefDrum}>
-          <iframe
-            title="Bateria"
-            width="235"
-            height="290"
-            src="https://production--kaleidoscopic-liger-5074ba.netlify.app/"
+        </Paragraph>
+      </RowAlignReverseContainer>
+      <RowAlignContainer className="row-align" ref={elementRefBlog}>
+        <Paragraph style={{ opacity: `${translateBlog}` }}>
+          {t("projects.prayNow")}
+        </Paragraph>
+        <a href="https://www.rezeagora.com.br/" target="_blank">
+          <Rotate
+            backgroundImgFront={prayNowLight}
+            backgroundImgBack={prayNowDark}
           />
-          <Paragraph style={{ opacity: `${translateDrum}` }}>
-            <a
-              href="https://production--kaleidoscopic-liger-5074ba.netlify.app"
-              target="_blank"
-            >
-              {t("projects.drumKit")}
-            </a>
-          </Paragraph>
-        </RowAlignReverseContainer>
+        </a>
+      </RowAlignContainer>
 
-        <RowAlignContainer className="row-align" ref={elementRefQuotes}>
-          <Paragraph style={{ opacity: `${translateQuotes}` }}>
-            <a href="https://codepen.io/natanrei/full/LYjvQmB" target="_blank">
-              {t("projects.phases")}
-            </a>
-          </Paragraph>
-          <HoverZoom
-            projectLink="https://codepen.io/natanrei/full/LYjvQmB"
-            projectImage={QuoteGeneratorWebp}
-          />
-        </RowAlignContainer>
+      <RowAlignReverseContainer className="row-align" ref={elementRefEcom}>
+        <HoverLink />
+        <Paragraph style={{ opacity: `${translateEcom}` }}>
+          <a
+            href="https://production--curious-sunflower-f79e30.netlify.app/"
+            target="_blank"
+          >
+            {t("projects.eCommerce")}
+          </a>
+        </Paragraph>
+      </RowAlignReverseContainer>
 
-        <RowAlignReverseContainer className="row-align" ref={elementRefEcom}>
-          <HoverLink />
-          <Paragraph style={{ opacity: `${translateEcom}` }}>
-            <a
-              href="https://production--curious-sunflower-f79e30.netlify.app/"
-              target="_blank"
-            >
-              {t("projects.eCommerce")}
-            </a>
-          </Paragraph>
-        </RowAlignReverseContainer>
-
-        <RowAlignContainer className="row-align" ref={elementRefApiGym}>
-          <Paragraph style={{ opacity: `${translateApiGym}` }}>
-            <a href="https://github.com/NatanRei/ntn-api-solid" target="_blank">
-              {t("projects.api")}
-            </a>
-          </Paragraph>
-          <List />
-        </RowAlignContainer>
-      </ProjectsContainer>
-    );
+      <RowAlignContainer className="row-align" ref={elementRefApiGym}>
+        <Paragraph style={{ opacity: `${translateApiGym}` }}>
+          <a href="https://github.com/NatanRei/ntn-api-solid" target="_blank">
+            {t("projects.api")}
+          </a>
+        </Paragraph>
+        <List />
+      </RowAlignContainer>
+    </ProjectsContainer>
+  );
 }

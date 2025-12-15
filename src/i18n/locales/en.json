@@ -51,6 +51,7 @@
         "techNow": "Tech Now, a blog built with Next.js on the frontend and Strapi as the headless CMS",
         "drumKit": "A drum kit, just click and create your own music",
         "phases": "Random phrase generator",
+        "prayNow": "Reze Agora, A spirituality web platform featuring an interactive rosary, daily liturgy, and prayer search, built with a strong focus on user experience.",
         "eCommerce": "An e-commerce integrated with the Stripe API",
         "api": "A complete API, GymPass-style",
         "apiList": [

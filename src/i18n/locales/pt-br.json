@@ -51,6 +51,7 @@
         "techNow": "Tech Now, um Blog feito utilizando Next.js no front, e Strapi como headless CMS",
         "drumKit": "Uma bateria, só clicar e fazer a sua música",
         "phases": "Gerador de frases aleatórias",
+        "prayNow": "Reze Agora, Plataforma web de espiritualidade com terço interativo, liturgia diária e busca de orações, desenvolvida com foco em experiência do usuário.",
         "eCommerce": "Um E-commerce, integrado com Stripe API",
         "api": "API Completa, estilo GymPass",
         "apiList": [

@@ -48,7 +48,7 @@ const HeaderIcon = ({ className, ...props }: React.ComponentProps<"a">) => {
     <a
       {...props}
       className={cn(
-        "text-gray-800 dark:text-gray-300 font-medium no-underline cursor-pointer hover:text-black dark:hover:text-white hover:border-b px-2",
+        "text-gray-800 dark:text-gray-200 font-medium no-underline cursor-pointer hover:text-black dark:hover:text-white hover:border-b px-2",
         className
       )}
     />
